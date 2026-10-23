@@ -1,145 +1,146 @@
-# Usporedba arhitektura LLM agenata u sustavima za e-učenje
+# Comparison of LLM Agent Architectures for E-Learning Systems
 
-Projekt uspoređuje četiri okvira za izgradnju LLM agenata (LangGraph,
-LlamaIndex Workflows, CrewAI, OpenAI Agents SDK) na istom zadatku u
-e-učenju: dijagnoza pogreške u studentskom kodu i odabir sljedećeg
-pedagoškog koraka.
+This project compares four frameworks for building LLM agents (LangGraph,
+LlamaIndex Workflows, CrewAI, OpenAI Agents SDK) on the same e-learning
+task: diagnosing an error in a student's code and choosing the next
+pedagogical step.
 
-Jezični model: `openai/gpt-oss-20b` preko Groq API-ja.
+Language model: `openai/gpt-oss-20b` via the Groq API.
 
-## Struktura projekta
+## Project structure
 
-| Mapa / datoteka | Sadržaj |
+| Folder / file | Contents |
 |---|---|
-| `common/` | Zajednički dio: ugovor (`contract.py`), LLM klijent (`llm_client.py`), pedagoška politika (`policy.py`), pristup zadacima (`task_repo.py`) |
-| `frameworks/` | Po jedna implementacija agenta za svaki okvir: `langgraph/`, `llamaindex/`, `crewai/`, `openai_sdk/` |
-| `simulator/` | Simulator studenata (`student_simulator.py`) |
-| `db/` | PostgreSQL shema, početni podaci i učitavanje zadataka |
-| `tasks/` | Definicije zadataka u JSON formatu (tekst, testovi, tipične pogreške) |
-| `results/` | CSV datoteke s mjerenjima i agregirani sažetak |
-| `moodle_integration/` | Integracija s Moodleom |
-| `run_full_simulation.py` | Glavna skripta za prikupljanje podataka |
-| `aggregate_results.py` | Agregacija izmjerenih rezultata |
+| `common/` | Shared code: contract (`contract.py`), LLM client (`llm_client.py`), pedagogical policy (`policy.py`), task access (`task_repo.py`) |
+| `frameworks/` | One agent implementation per framework: `langgraph/`, `llamaindex/`, `crewai/`, `openai_sdk/` |
+| `simulator/` | Student simulator (`student_simulator.py`) |
+| `db/` | PostgreSQL schema, seed data and task loader |
+| `tasks/` | Task definitions in JSON (prompt, tests, typical errors) |
+| `results/` | CSV files with measurements and an aggregated summary |
+| `moodle_integration/` | Moodle integration |
+| `run_full_simulation.py` | Main data collection script |
+| `aggregate_results.py` | Aggregation of measured results |
 
-## Preduvjeti
+## Prerequisites
 
-- Python 3.12 ili noviji
+- Python 3.12 or newer
 - PostgreSQL
-- Servis za izvršavanje studentskog koda (sandbox) dostupan na
-  `http://localhost:8090` (varijabla `ELT_SANDBOX_URL`)
-- Groq API ključ
+- A service for executing student code (sandbox) available at
+  `http://localhost:8090` (variable `ELT_SANDBOX_URL`)
+- A Groq API key
 
-Biblioteke koje projekt koristi: `psycopg2-binary`, `requests`,
+Libraries used by the project: `psycopg2-binary`, `requests`,
 `langgraph`, `llama-index`, `crewai`, `openai-agents`.
 
-## Postavljanje
+## Setup
 
-1. Postavi varijable okoline. Ključ nikada ne spremaj u datoteku unutar
-   projekta.
+1. Set the environment variables. Never store the key in a file inside
+   the project.
 
    Windows:
    ```
-   setx GROQ_API_KEY "tvoj_kljuc"
+   setx GROQ_API_KEY "your_key"
    ```
-   Nakon toga otvori novi terminal.
+   Then open a new terminal.
 
-2. Napravi bazu `elt_agents` i učitaj podatke, ovim redom:
+2. Create the `elt_agents` database and load the data, in this order:
    ```
    psql -U elt_admin -d elt_agents -f db/schema.sql
    psql -U elt_admin -d elt_agents -f db/seed_base.sql
    python db/load_tasks.py
    ```
-   - `schema.sql` stvara tablice.
-   - `seed_base.sql` unosi 4 koncepta (`if_else`, `for_loop`, `while_loop`,
-     `nested`) i 3 profila studenata.
-   - `load_tasks.py` učitava zadatke iz mape `tasks/`. Preskače zadatke
-     koji već postoje, pa se može pokrenuti ponovno.
+   - `schema.sql` creates the tables.
+   - `seed_base.sql` inserts 4 concepts (`if_else`, `for_loop`, `while_loop`,
+     `nested`) and 3 student profiles.
+   - `load_tasks.py` loads tasks from the `tasks/` folder. It skips tasks
+     that already exist, so it can be run again safely.
 
-## Varijable okoline
+## Environment variables
 
-| Varijabla | Zadano | Značenje |
+| Variable | Default | Meaning |
 |---|---|---|
-| `GROQ_API_KEY` | obavezno | Groq API ključ |
-| `ELT_AGENT_MODEL` | zadani model u `agent.py` datoteci okvira | Model koji koriste agenti |
-| `ELT_SIMULATOR_MODEL` | `openai/gpt-oss-20b` | Model simulatora studenata |
-| `ELT_SANDBOX_URL` | `http://localhost:8090` | Servis za izvršavanje koda |
-| `ELT_DB_HOST` | `localhost` | Baza |
-| `ELT_DB_PORT` | `5432` | Baza |
-| `ELT_DB_NAME` | `elt_agents` | Baza |
-| `ELT_DB_USER` | `elt_admin` | Baza |
-| `ELT_DB_PASSWORD` | `change_me_locally` | Zadana lozinka je samo za lokalni razvoj; promijeni je |
+| `GROQ_API_KEY` | required | Groq API key |
+| `ELT_AGENT_MODEL` | default model in the framework's `agent.py` | Model used by the agents |
+| `ELT_SIMULATOR_MODEL` | `openai/gpt-oss-20b` | Model used by the student simulator |
+| `ELT_SANDBOX_URL` | `http://localhost:8090` | Code execution service |
+| `ELT_DB_HOST` | `localhost` | Database |
+| `ELT_DB_PORT` | `5432` | Database |
+| `ELT_DB_NAME` | `elt_agents` | Database |
+| `ELT_DB_USER` | `elt_admin` | Database |
+| `ELT_DB_PASSWORD` | `change_me_locally` | Default password is for local development only; change it |
 
-Za reproduciranje mjerenja postavi `ELT_AGENT_MODEL=openai/gpt-oss-20b`.
+To reproduce the measurements, set `ELT_AGENT_MODEL=openai/gpt-oss-20b`.
 
-## Pokretanje
+## Running
 
-Iz korijena projekta:
+From the project root:
 
 ```
 py run_full_simulation.py --seed 42
 ```
 
-Skripta pokreće 4 okvira x 3 profila studenata, svaki kroz punu sesiju
-(od prvog zadatka do `COMPLETE` ili sigurnosnog limita koraka). Svaka
-interakcija se zapisuje u tablicu `interaction_logs`.
+The script runs 4 frameworks x 3 student profiles, each through a full
+session (from the first task to `COMPLETE` or a safety step limit). Every
+interaction is written to the `interaction_logs` table.
 
-| Argument | Značenje |
+| Argument | Meaning |
 |---|---|
-| `--seed` | Seed simulatora, isti za sve okvire |
-| `--frameworks` | Zarezom odvojen popis okvira, npr. `langgraph,crewai` |
-| `--profiles` | Zarezom odvojen popis profila, npr. `common_errors` |
+| `--seed` | Simulator seed, the same for all frameworks |
+| `--frameworks` | Comma-separated list of frameworks, e.g. `langgraph,crewai` |
+| `--profiles` | Comma-separated list of profiles, e.g. `common_errors` |
 
-Primjer ograničenog pokretanja:
+Example of a restricted run:
 
 ```
 py run_full_simulation.py --seed 42 --frameworks langgraph,crewai --profiles common_errors
 ```
 
-Agregacija rezultata:
+Aggregating the results:
 
 ```
 py aggregate_results.py
 ```
 
-Samostalni test simulatora (bez agenta):
+Standalone simulator test (without an agent):
 
 ```
 py simulator/student_simulator.py --profile common_errors --task-title "Predznak broja" --seed 42
 ```
 
-## Profili studenata
+## Student profiles
 
-- `fast_accurate`: brz i točan student, ne pravi tipične pogreške
-- `common_errors`: student s tipičnim pogreškama iz definicije zadatka
-- `slow_unsure`: spor i nesiguran student, povremeno postavlja kratka i
-  nejasna pitanja umjesto koda
+- `fast_accurate`: fast and accurate student, makes no typical errors
+- `common_errors`: student who makes the typical errors defined in the task
+- `slow_unsure`: slow and unsure student who sometimes asks short, vague
+  questions instead of submitting code
 
-Ponašanje svakog profila definirano je poljem `behavior_spec` (JSONB) u
-tablici `student_profiles`.
+Each profile's behavior is defined in the `behavior_spec` (JSONB) field of
+the `student_profiles` table.
 
-## Determinizam simulatora
+## Simulator determinism
 
-RNG simulatora seedira se kombinacijom seeda, zadatka i broja pokušaja.
-Isti `--seed` daje identičan odabir tipa pokušaja (točan, pogrešan,
-pojašnjenje) i pogreške za isti zadatak i pokušaj kroz sva 4 okvira.
-Razlike u ishodu proizlaze iz orkestracije i odgovora jezičnog modela, a
-ne iz različitog scenarija studenta.
+The simulator's RNG is seeded with a combination of the seed, the task and
+the attempt number. The same `--seed` gives an identical choice of attempt
+type (correct, buggy, clarification) and of error for the same task and
+attempt across all 4 frameworks. Differences in outcome therefore come from
+the orchestration and the language model's responses, not from a different
+student scenario.
 
-Tekst koda koji generira LLM i dalje varira između pokretanja, jer simulator
-koristi temperaturu 0,2 (točni pokušaji) i 0,7 (pogrešni pokušaji i
-pojašnjenja).
+The code text generated by the LLM still varies between runs, because the
+simulator uses temperature 0.2 (correct attempts) and 0.7 (buggy attempts
+and clarifications).
 
-## Što se mjeri
+## What is measured
 
-Latencija, broj LLM poziva, ulazni i izlazni tokeni te točnost rješenja i
-dijagnoze, po okviru.
+Latency, number of LLM calls, input and output tokens, and solution and
+diagnosis accuracy, per framework.
 
-## Ograničenja
+## Limitations
 
-- Jedan seed i jedan model.
-- CrewAI i OpenAI Agents SDK ne postavljaju eksplicitno temperaturu ni
-  izlaznu granicu tokena te koriste vlastite klijente.
-- Mjerenja za LangGraph i LlamaIndex nisu provedena istog dana kao
-  mjerenja za CrewAI i OpenAI Agents SDK.
-- Model je reasoning model, pa skriveni tokeni razmišljanja troše izlaznu
-  granicu (`max_tokens`) i mogu skratiti odgovor.
+- A single seed and a single model.
+- CrewAI and the OpenAI Agents SDK do not explicitly set temperature or
+  the output token limit, and they use their own clients.
+- Measurements for LangGraph and LlamaIndex were not taken on the same day
+  as those for CrewAI and the OpenAI Agents SDK.
+- The model is a reasoning model, so hidden reasoning tokens consume the
+  output limit (`max_tokens`) and can truncate a response.
