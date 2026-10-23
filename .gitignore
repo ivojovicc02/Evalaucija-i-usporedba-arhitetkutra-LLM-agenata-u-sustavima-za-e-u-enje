@@ -1,0 +1,6 @@
+grok kljuc.txt
+*.txt.key
+.env
+.venv/
+__pycache__/
+results/

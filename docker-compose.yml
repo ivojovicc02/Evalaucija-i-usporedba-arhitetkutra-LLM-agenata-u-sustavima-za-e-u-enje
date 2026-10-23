@@ -1,0 +1,33 @@
+services:
+  db:
+    image: postgres:16
+    container_name: elt_agents_db
+    environment:
+      POSTGRES_USER: elt_admin
+      POSTGRES_PASSWORD: change_me_locally
+      POSTGRES_DB: elt_agents
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U elt_admin -d elt_agents"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  sandbox:
+    build:
+      context: ./sandbox
+    container_name: elt_agents_sandbox
+    ports:
+      - "8090:8090"
+    # sandbox nema pristup mreži niti bazi -- izolovan izvršni servis
+    network_mode: "bridge"
+    read_only: false
+    mem_limit: 256m
+    cpus: 0.5
+
+volumes:
+  pgdata:

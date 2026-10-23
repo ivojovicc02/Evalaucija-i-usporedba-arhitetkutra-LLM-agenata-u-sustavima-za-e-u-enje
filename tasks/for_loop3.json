@@ -1,0 +1,38 @@
+{
+  "concept_code": "for_loop",
+  "difficulty": 3,
+  "title": "Obrni string pomoću for petlje",
+  "prompt": "Napiši funkciju `reverse_string_forloop(s)` koja pomoću for petlje vraća obrnuti string s. NE smiješ koristiti slicing (s[::-1]) niti reversed().",
+  "entry_point": "reverse_string_forloop",
+  "starter_code": "def reverse_string_forloop(s):\n    # tvoj kod ovdje (bez slicing/reversed)\n    pass\n",
+  "test_cases": [
+    {
+      "input": "hello",
+      "expected_output": "olleh"
+    },
+    {
+      "input": "a",
+      "expected_output": "a"
+    },
+    {
+      "input": "python",
+      "expected_output": "nohtyp"
+    },
+    {
+      "input": "",
+      "expected_output": ""
+    }
+  ],
+  "common_errors": [
+    {
+      "error_code": "wrong_concatenation_order",
+      "description": "Student dodaje karaktere na kraj umjesto na početak novog stringa -> vrati isti string, ne obrnut",
+      "example_wrong_code": "def reverse_string_forloop(s):\n    result = ''\n    for ch in s:\n        result = result + ch\n    return result\n"
+    },
+    {
+      "error_code": "index_out_of_range",
+      "description": "Student pokuša indeksirati unazad ali pogrešno postavi raspon pa dobije IndexError",
+      "example_wrong_code": "def reverse_string_forloop(s):\n    result = ''\n    for i in range(len(s), 0):\n        result += s[i]\n    return result\n"
+    }
+  ]
+}

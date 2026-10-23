@@ -1,0 +1,43 @@
+{
+  "concept_code": "for_loop",
+  "difficulty": 2,
+  "title": "Suma raspona brojeva",
+  "prompt": "Napiši funkciju `sum_of_range(n)` koja pomoću for petlje vraća zbir svih brojeva od 1 do n (uključivo). Ne koristi ugrađenu formulu ili sum().",
+  "entry_point": "sum_of_range",
+  "starter_code": "def sum_of_range(n):\n    # tvoj kod ovdje\n    pass\n",
+  "test_cases": [
+    {
+      "input": 5,
+      "expected_output": "15"
+    },
+    {
+      "input": 1,
+      "expected_output": "1"
+    },
+    {
+      "input": 10,
+      "expected_output": "55"
+    },
+    {
+      "input": 0,
+      "expected_output": "0"
+    }
+  ],
+  "common_errors": [
+    {
+      "error_code": "off_by_one_range",
+      "description": "Student koristi range(1, n) umjesto range(1, n+1) -> suma je manja za n",
+      "example_wrong_code": "def sum_of_range(n):\n    total = 0\n    for i in range(1, n):\n        total += i\n    return total\n"
+    },
+    {
+      "error_code": "accumulator_not_reset",
+      "description": "Student inicijalizuje total unutar petlje umjesto prije nje -> uvijek vrati posljednji broj, ne sumu",
+      "example_wrong_code": "def sum_of_range(n):\n    for i in range(1, n+1):\n        total = 0\n        total += i\n    return total\n"
+    },
+    {
+      "error_code": "zero_edge_case_error",
+      "description": "Student ne obradi n=0 pa range(1, 1) radi ok slučajno, ali logika za n=0 može pući ako se koristi drugi pristup (npr. n-1 negdje)",
+      "example_wrong_code": "def sum_of_range(n):\n    total = 0\n    for i in range(1, n):\n        total += i\n    return total + n\n"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+llama-index-workflows
+requests
+psycopg2-binary

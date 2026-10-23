@@ -1,0 +1,50 @@
+{
+  "concept_code": "if_else",
+  "difficulty": 2,
+  "title": "Ocjena na osnovu bodova",
+  "prompt": "Napiši funkciju `grade(score)` koja za dati broj bodova (0-100) vraća slovnu ocjenu: 'A' za 90+, 'B' za 80-89, 'C' za 70-79, 'D' za 60-69, 'F' za manje od 60.",
+  "entry_point": "grade",
+  "starter_code": "def grade(score):\n    # tvoj kod ovdje\n    pass\n",
+  "test_cases": [
+    {
+      "input": 95,
+      "expected_output": "A"
+    },
+    {
+      "input": 82,
+      "expected_output": "B"
+    },
+    {
+      "input": 70,
+      "expected_output": "C"
+    },
+    {
+      "input": 65,
+      "expected_output": "D"
+    },
+    {
+      "input": 40,
+      "expected_output": "F"
+    },
+    {
+      "input": 90,
+      "expected_output": "A"
+    },
+    {
+      "input": 89,
+      "expected_output": "B"
+    }
+  ],
+  "common_errors": [
+    {
+      "error_code": "wrong_boundary_operator",
+      "description": "Student koristi > umjesto >= na granicama pa npr. score=90 pogrešno pada u B",
+      "example_wrong_code": "def grade(score):\n    if score > 90:\n        return 'A'\n    elif score > 80:\n        return 'B'\n    elif score > 70:\n        return 'C'\n    elif score > 60:\n        return 'D'\n    else:\n        return 'F'\n"
+    },
+    {
+      "error_code": "unordered_conditions",
+      "description": "Student provjerava uslove u pogrešnom redoslijedu (od najnižeg ka najvišem) pa se svi visoki bodovi uhvate u prvi (najniži) uslov",
+      "example_wrong_code": "def grade(score):\n    if score >= 60:\n        return 'D'\n    elif score >= 70:\n        return 'C'\n    elif score >= 80:\n        return 'B'\n    elif score >= 90:\n        return 'A'\n    else:\n        return 'F'\n"
+    }
+  ]
+}

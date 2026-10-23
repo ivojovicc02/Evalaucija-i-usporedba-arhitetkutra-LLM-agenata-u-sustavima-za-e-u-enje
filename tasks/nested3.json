@@ -1,0 +1,39 @@
+{
+  "concept_code": "nested",
+  "difficulty": 3,
+  "title": "Trokut od zvjezdica",
+  "prompt": "Napiši funkciju `star_triangle(n)` koja pomoću ugniježđene petlje i if uslova vraća string koji predstavlja pravougli trokut od zvjezdica visine n: red i (počevši od 1) sadrži tačno i zvjezdica, redovi razdvojeni s '\\n', bez razmaka između zvjezdica.",
+  "entry_point": "star_triangle",
+  "starter_code": "def star_triangle(n):\n    # tvoj kod ovdje\n    pass\n",
+  "test_cases": [
+    {
+      "input": 3,
+      "expected_output": "*\n**\n***"
+    },
+    {
+      "input": 1,
+      "expected_output": "*"
+    },
+    {
+      "input": 4,
+      "expected_output": "*\n**\n***\n****"
+    }
+  ],
+  "common_errors": [
+    {
+      "error_code": "off_by_one_star_count",
+      "description": "Student koristi range(i) umjesto range(i+1) ili range(1,i) u unutrašnjoj petlji -> pogrešan broj zvjezdica po redu",
+      "example_wrong_code": "def star_triangle(n):\n    rows = []\n    for i in range(1, n+1):\n        row = ''\n        for j in range(i-1):\n            row += '*'\n        rows.append(row)\n    return '\\n'.join(rows)\n"
+    },
+    {
+      "error_code": "outer_range_wrong",
+      "description": "Student koristi range(n) za vanjsku petlju ali onda pogrešno računa broj zvjezdica jer zaboravi da i sada kreće od 0",
+      "example_wrong_code": "def star_triangle(n):\n    rows = []\n    for i in range(n):\n        row = ''\n        for j in range(i):\n            row += '*'\n        rows.append(row)\n    return '\\n'.join(rows)\n"
+    },
+    {
+      "error_code": "extra_space_added",
+      "description": "Student doda razmak između zvjezdica iako to nije traženo",
+      "example_wrong_code": "def star_triangle(n):\n    rows = []\n    for i in range(1, n+1):\n        row = []\n        for j in range(i):\n            row.append('*')\n        rows.append(' '.join(row))\n    return '\\n'.join(rows)\n"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "concept_code": "nested",
+  "difficulty": 2,
+  "title": "Brojanje prostih brojeva do n",
+  "prompt": "Napiši funkciju `count_primes_upto(n)` koja vraća broj prostih brojeva u rasponu od 2 do n (uključivo), koristeći ugniježđenu petlju (vanjska ide kroz kandidate, unutrašnja provjerava djeljivost) i if uslov.",
+  "entry_point": "count_primes_upto",
+  "starter_code": "def count_primes_upto(n):\n    # tvoj kod ovdje\n    pass\n",
+  "test_cases": [
+    {
+      "input": 10,
+      "expected_output": "4"
+    },
+    {
+      "input": 2,
+      "expected_output": "1"
+    },
+    {
+      "input": 20,
+      "expected_output": "8"
+    },
+    {
+      "input": 1,
+      "expected_output": "0"
+    }
+  ],
+  "common_errors": [
+    {
+      "error_code": "one_counted_as_prime",
+      "description": "Student uključi 1 kao prost broj jer petlja krene od 1 umjesto od 2",
+      "example_wrong_code": "def count_primes_upto(n):\n    count = 0\n    for num in range(1, n+1):\n        is_prime = True\n        for i in range(2, num):\n            if num % i == 0:\n                is_prime = False\n        if is_prime:\n            count += 1\n    return count\n"
+    },
+    {
+      "error_code": "wrong_inner_range",
+      "description": "Student provjerava djeljivost do num umjesto do num-1 pa svaki broj 'podijeli sam sebe' i pogrešno se proglasi neprostim",
+      "example_wrong_code": "def count_primes_upto(n):\n    count = 0\n    for num in range(2, n+1):\n        is_prime = True\n        for i in range(2, num+1):\n            if num % i == 0 and i != num:\n                is_prime = False\n            elif num % i == 0:\n                is_prime = False\n        if is_prime:\n            count += 1\n    return count\n"
+    },
+    {
+      "error_code": "flag_not_reset",
+      "description": "Student ne resetuje is_prime na True za svaki novi kandidat -> jednom kad postane False ostane False zauvijek",
+      "example_wrong_code": "def count_primes_upto(n):\n    count = 0\n    is_prime = True\n    for num in range(2, n+1):\n        for i in range(2, num):\n            if num % i == 0:\n                is_prime = False\n        if is_prime:\n            count += 1\n    return count\n"
+    }
+  ]
+}

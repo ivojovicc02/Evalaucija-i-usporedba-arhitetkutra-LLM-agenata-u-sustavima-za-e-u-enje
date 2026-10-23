@@ -1,0 +1,42 @@
+{
+  "concept_code": "if_else",
+  "difficulty": 3,
+  "title": "FizzBuzz za jedan broj",
+  "prompt": "Napiši funkciju `fizzbuzz_single(n)` koja vraća 'FizzBuzz' ako je n djeljivo i s 3 i s 5, 'Fizz' ako je djeljivo samo s 3, 'Buzz' ako je djeljivo samo s 5, a inače string reprezentaciju broja n.",
+  "entry_point": "fizzbuzz_single",
+  "starter_code": "def fizzbuzz_single(n):\n    # tvoj kod ovdje\n    pass\n",
+  "test_cases": [
+    {
+      "input": 15,
+      "expected_output": "FizzBuzz"
+    },
+    {
+      "input": 9,
+      "expected_output": "Fizz"
+    },
+    {
+      "input": 10,
+      "expected_output": "Buzz"
+    },
+    {
+      "input": 7,
+      "expected_output": "7"
+    },
+    {
+      "input": 30,
+      "expected_output": "FizzBuzz"
+    }
+  ],
+  "common_errors": [
+    {
+      "error_code": "wrong_condition_order",
+      "description": "Student prvo provjerava djeljivost s 3, pa broj 15 pogrešno vrati 'Fizz' jer nikad ne stigne do kombinovanog uslova",
+      "example_wrong_code": "def fizzbuzz_single(n):\n    if n % 3 == 0:\n        return 'Fizz'\n    elif n % 5 == 0:\n        return 'Buzz'\n    elif n % 3 == 0 and n % 5 == 0:\n        return 'FizzBuzz'\n    else:\n        return str(n)\n"
+    },
+    {
+      "error_code": "wrong_logical_operator",
+      "description": "Student koristi 'or' umjesto 'and' za kombinovani uslov",
+      "example_wrong_code": "def fizzbuzz_single(n):\n    if n % 3 == 0 or n % 5 == 0:\n        return 'FizzBuzz'\n    elif n % 3 == 0:\n        return 'Fizz'\n    elif n % 5 == 0:\n        return 'Buzz'\n    else:\n        return str(n)\n"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "concept_code": "while_loop",
+  "difficulty": 3,
+  "title": "Collatz niz - broj koraka",
+  "prompt": "Napiši funkciju `collatz_steps(n)` koja vraća broj koraka potrebnih da se, primjenom Collatz pravila, od n dođe do 1. Pravilo: ako je broj paran, podijeli ga s 2; ako je neparan, pomnoži s 3 i dodaj 1. Broji korake dok ne dođeš do 1 (n >= 1).",
+  "entry_point": "collatz_steps",
+  "starter_code": "def collatz_steps(n):\n    # tvoj kod ovdje\n    pass\n",
+  "test_cases": [
+    {
+      "input": 1,
+      "expected_output": "0"
+    },
+    {
+      "input": 6,
+      "expected_output": "8"
+    },
+    {
+      "input": 27,
+      "expected_output": "111"
+    }
+  ],
+  "common_errors": [
+    {
+      "error_code": "wrong_termination_condition",
+      "description": "Student koristi while n > 1 ali pogrešno broji korak i za n=1 na ulazu -> vrati 1 umjesto 0",
+      "example_wrong_code": "def collatz_steps(n):\n    steps = 0\n    while True:\n        if n == 1:\n            steps += 1\n            break\n        if n % 2 == 0:\n            n = n // 2\n        else:\n            n = 3 * n + 1\n        steps += 1\n    return steps\n"
+    },
+    {
+      "error_code": "wrong_parity_branch",
+      "description": "Student zamijeni grane za paran/neparan broj",
+      "example_wrong_code": "def collatz_steps(n):\n    steps = 0\n    while n != 1:\n        if n % 2 == 0:\n            n = 3 * n + 1\n        else:\n            n = n // 2\n        steps += 1\n    return steps\n"
+    },
+    {
+      "error_code": "integer_division_missing",
+      "description": "Student koristi / umjesto // za parne brojeve pa n postane float i petlja nikad ne završi ispravno",
+      "example_wrong_code": "def collatz_steps(n):\n    steps = 0\n    while n != 1:\n        if n % 2 == 0:\n            n = n / 2\n        else:\n            n = 3 * n + 1\n        steps += 1\n    return steps\n"
+    }
+  ]
+}

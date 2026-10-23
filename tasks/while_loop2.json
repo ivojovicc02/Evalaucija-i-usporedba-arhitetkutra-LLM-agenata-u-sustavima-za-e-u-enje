@@ -1,0 +1,43 @@
+{
+  "concept_code": "while_loop",
+  "difficulty": 2,
+  "title": "Suma cifara broja",
+  "prompt": "Napiši funkciju `digit_sum(n)` koja pomoću while petlje vraća zbir cifara nenegativnog cijelog broja n.",
+  "entry_point": "digit_sum",
+  "starter_code": "def digit_sum(n):\n    # tvoj kod ovdje\n    pass\n",
+  "test_cases": [
+    {
+      "input": 123,
+      "expected_output": "6"
+    },
+    {
+      "input": 9,
+      "expected_output": "9"
+    },
+    {
+      "input": 1000,
+      "expected_output": "1"
+    },
+    {
+      "input": 0,
+      "expected_output": "0"
+    }
+  ],
+  "common_errors": [
+    {
+      "error_code": "missing_update_infinite_loop",
+      "description": "Student zaboravi ažurirati n (n //= 10) unutar petlje -> beskonačna petlja",
+      "example_wrong_code": "def digit_sum(n):\n    total = 0\n    while n > 0:\n        total += n % 10\n    return total\n"
+    },
+    {
+      "error_code": "zero_edge_case",
+      "description": "Student ne obradi n=0 posebno pa while petlja nikad ne uđe u tijelo -> vrati 0 slučajno tačno, ali logika je krhka za druge slične edge-caseve",
+      "example_wrong_code": "def digit_sum(n):\n    total = 0\n    while n != 0:\n        total += n % 10\n        n = n // 10\n    return total\n"
+    },
+    {
+      "error_code": "wrong_modulo_division_order",
+      "description": "Student zamijeni redoslijed // i % operacija pa dobije pogrešnu cifru",
+      "example_wrong_code": "def digit_sum(n):\n    total = 0\n    while n > 0:\n        total += n // 10\n        n = n % 10\n    return total\n"
+    }
+  ]
+}

@@ -1,0 +1,2612 @@
+id,session_id,framework_code,student_profile_id,task_id,step_index,submitted_code,test_pass_count,test_total_count,is_correct,detected_error_code,actual_error_code,agent_feedback_text,next_action,mastery_before,mastery_after,llm_call_count,input_tokens,output_tokens,latency_ms,judge_clarity_score,judge_pedagogical_score,judge_reveals_solution,error_occurred,error_message,created_at
+1,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-07-28 20:40:18.048455+00
+2,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,4,2,"def sign(n):
+    if n > 0:
+        return 'positive'
+    elif n < 0:
+        return 'negative'
+    else:
+        return 'zero'",3,3,t,,,Željelo bi se da ti uspješnost bude nastavljena! Srećan si što si uspio riješiti zadatak iz prvog pokušaja!,advance,0.000,0.340,1,114,43,265,,,,f,,2026-07-28 20:40:18.690067+00
+3,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,5,3,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,"Ostvario si veliki uspjeh riješivši zadatak iz prvog pokušaja! Odlično ste pokazali svoje znanje i spremanost, što je jako pozitivan znak za buduću nastavu.",advance,0.340,0.680,1,118,59,375,,,,f,,2026-07-28 20:40:18.718165+00
+4,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,6,4,"def fizzbuzz_single(n):
+    if n % 3 == 0 and n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)",5,5,t,,,Sretno si što si uspio riješiti zadatak FizzBuzz za jedan broj u prvom pokušaju! To je veliki početak za uspješnu karijeru u programiranju!,advance,0.680,1.000,1,117,53,280,,,,f,,2026-07-28 20:40:19.594773+00
+5,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,1,5,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,"Žao mi je što, ali ne postoje podaci o tome koji je student uspio riješiti zadatak iz 1. pokušaja. Međutim, mogu vam reći da ste napravili dobar početak! Vaša brzina i preciznost su veliki korak prema uspješnom razvoju kao programer.",advance,0.000,0.340,1,119,86,343,,,,f,,2026-07-28 20:40:20.304978+00
+6,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,2,6,"def sum_of_range(n):
+    zbir = 0
+    for i in range(1, n + 1):
+        zbir += i
+    return zbir",4,4,t,,,"Hvala što si uspio riješiti zadatak prvom pokušajem! Očito si imao dobar plan i ispravno implementirano rješenje, što ti je donijelo uspjeh.",advance,0.340,0.680,1,117,53,311,,,,f,,2026-07-28 20:40:20.955207+00
+7,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,3,7,"def reverse_string_forloop(s):
+    reversed_s = """"
+    for char in s:
+        reversed_s = char + reversed_s
+    return reversed_s",4,4,t,,,"Sjajno! Ti si zapravo talentiran programer! Uspešno ste obrnuli string pomoću for petlje, što je veliki korak naprijed u svijetu programiranja!",advance,0.680,1.000,1,120,51,15577,,,,f,,2026-07-28 20:40:21.6367+00
+8,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,9,8,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,"Ne brini se! To je normalno da se pojavljuju greške, jer su dio učenja. Kao prvi korak, razmisli o uvjetu za odbrojavanje i što bi se dogodilo ako bi koristio n >= 0 umjesto n > 0. Koji bi bio rezultat?",retry,0.000,0.000,2,401,85,561,,,,f,,2026-07-28 20:40:37.906553+00
+9,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,9,9,,,,,,,,,,,0,0,0,0,,,,t,"",2026-07-28 20:40:39.902568+00
+10,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,9,10,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,"Uzmi u obzir da se odbrojavanje obično izvodi dok je n > 0, što znači da će se broj 0 ispisati jednom previše. Pokušaj ispraviti uvjet i pogledaj šta se događa sa rezultatom.",easier,0.000,0.000,2,401,78,640,,,,f,,2026-07-28 20:40:41.583368+00
+11,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,10,11,"def digit_sum(n):
+    zbir = 0
+    while n > 0:
+        zbir += n % 10
+        n //= 10
+    return zbir",4,4,t,,,Sve pohvale studentu! Brzo i iskreno ste riješili zadatak o sumi cifara broja. Očito ste imali dobar pojam o problemu i uspješno ste ga implementirali.,advance,0.000,0.340,1,115,55,297,,,,f,,2026-07-28 20:40:42.711779+00
+12,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,11,12,"def collatz_steps(n):
+    koraci = 0
+    while n != 1:
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = 3 * n + 1
+        koraci += 1
+    return koraci",3,3,t,,,"""Super, uspješno si riješio zadatak o Collatz nizu! Vaša brzina i preciznost su uvidjeli da ste u potpunosti razumjeli problem.""",advance,0.340,0.680,1,118,50,515,,,,f,,2026-07-28 20:40:43.854182+00
+13,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,7,13,"def multiplication_table(n):
+    table = ''
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            table += str(i * j) + ' '
+        table = table.strip() + '\n'
+    return table.strip()",3,3,t,,,"Hvala ti na brzini i učinkovitosti! Uspešno ste izvršili zadatak i stvorili tablicu množenja, što govori o vašoj sposobnosti za logičko mišljenje i rad sa podacima.",advance,0.000,0.340,1,115,64,390,,,,f,,2026-07-28 20:41:06.178702+00
+14,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,8,14,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,"Želimo ti čestitke na uspješnom rješenju zadataka! Ti si zapravo brz i pametan, jer si uspio izvrsiti brojanje prostih brojeva do n već na prvom pokušaju!",advance,0.340,0.680,1,119,63,327,,,,f,,2026-07-28 20:41:08.1742+00
+15,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,12,15,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Nema brige, to je normalno. Sjeti se da je range(n) uključujući 0, tako da ćeš morati samo ispraviti računanje broja zvjezdica. Provjeri da li je broj zvjezdica jednak broju redova u trokutu.",retry,0.680,0.680,2,475,75,547,,,,f,,2026-07-28 20:41:09.452893+00
+16,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,12,16,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Nema problema ako si zaboravio na detalje, sve što treba učiniti jest da se vrati na početak i ponovno razmisli o tome kako će izračunati broj zvjezdica. Pokušaj ponovo, pa će ti sve biti jasno!",retry,0.680,0.680,2,475,70,15735,,,,f,,2026-07-28 20:41:26.740821+00
+17,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,12,17,,,,,,,,,,,0,0,0,0,,,,t,"",2026-07-28 20:41:26.813908+00
+18,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,12,18,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,Pogrešan kod! Sjeti se da range vraca brojeve od 0 do n-1. Misliš li da ćeš imati n zvjezdica na svaku riječenicu? Kreni od 0 i pogledaj što ćeš dobiti!,easier,0.680,0.680,2,475,69,640,,,,f,,2026-07-28 20:41:27.868007+00
+19,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,8,19,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,"Svakako si znao da će uspjeti! Odlična rješenja, brzo i učinkovito!",advance,0.680,1.000,1,119,31,328,,,,f,,2026-07-28 20:41:27.940609+00
+38,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,9,8,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,Nema brige ako nisi uspio riješiti ovaj zadatak! To je normalno dio učenja. Pokušaj ponovno razmišljati o uvjetima za odbrojavanje i provjeriti da li su sve brojevi ispisani kao treba.,retry,0.000,0.000,2,401,73,888,,,,f,,2026-07-28 20:51:52.452369+00
+20,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,12,20,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pokusaj ponovo pogledati kôd i misli o tome što se događa kad krećeš od 0. U stvari, to nije pogreška, već jedan od načina da dostigneš željeni efekt. Pročitaj kôd ponovo i vidjeti da li je to što ti treba.",easier,1.000,1.000,2,475,84,671,,,,f,,2026-07-28 20:41:28.754463+00
+21,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,8,21,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,"Hvala ti što si uspio riješiti zadatak! Oduševljava me tvoj trud i izbornost, posebice što si uspio na 3. pokušaju - to je veliki korak naprijed!",advance,1.000,1.000,1,119,58,406,,,,f,,2026-07-28 20:41:50.290225+00
+22,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,12,22,,,,,,,,,,,0,0,0,0,,,,t,"",2026-07-28 20:41:52.278919+00
+23,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,12,23,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pokusaj ponovo pogledati kod i razmisli o tome kako bi trebao izračunati broj zvjezdica u svakoj vrsti. Sjeti se da range(n) kreće od 0, pa moraš upraviti broj zvjezdica u zavisnosti od dužine struje.",easier,1.000,1.000,2,475,76,531,,,,f,,2026-07-28 20:41:56.222983+00
+24,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,8,24,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,"Hvala ti što si uspio riješiti ovaj zadatak! Odlično je što si uspio nakon 4 pokušaja, to je pokazatelj tvoje truda i strasti za programiranje!",advance,1.000,1.000,1,119,53,328,,,,f,,2026-07-28 20:41:56.871667+00
+25,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,12,25,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,Sjeti se da je range funkcija u C++ (ili što god koristite) uključujući početni i krajnji index. Zbog toga morate koristiti range(n+1) umjesto range(n) da bi dobili očekivani rezultat.,easier,1.000,1.000,2,475,71,750,,,,f,,2026-07-28 20:41:58.052667+00
+26,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,8,26,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,"Super poslašnice! Uspešno ste riješili zadatak brojanja prostih brojeva do n, i to nakon samo 5 pokušaja. Znači da ste dobro shvatili koncept prostih brojeva i kako ih računati.",advance,1.000,1.000,1,119,67,375,,,,f,,2026-07-28 20:42:19.687445+00
+27,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,12,27,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,Pokusaj da promišljate o tome što se događa kada koristite range(n) i kako to utječe na broj zvjezdica koji se ispisuje. Sjetite se da range(n) u početku kreće od 0 i da morate ispraviti broj zvjezdica tako da se ispiše isti broj na svakoj liniji.,easier,1.000,1.000,2,475,92,562,,,,f,,2026-07-28 20:42:20.530832+00
+28,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,8,28,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    primes = [True] * (n + 1)
+    primes[0] = primes[1] = False
+    for i in range(2, int(n ** 0.5) + 1):
+        if primes[i]:
+            for j in range(i * i, n + 1, i):
+                primes[j] = False
+    return sum(primes)",4,4,t,,,"Hvala ti na trudu i neupadljivoj samouvjerenosti! Uspio si izvršiti zadatak brojanja prostih brojeva do n, što je zaista težak zadatak, a što si uspio iz 6. pokušaja govori o tvojoj većoj spremnosti za učenje.",advance,1.000,1.000,1,119,83,375,,,,f,,2026-07-28 20:42:21.578976+00
+29,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,12,29,,,,,,,,,,,0,0,0,0,,,,t,"",2026-07-28 20:42:42.807452+00
+30,db7144bd-7867-42a2-95b4-b347e8e40d8f,langgraph,1,12,30,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pogreška je u tome što nisi koristio range(n+1) ili range(n+2) za vanjsku petlju, što bi omogućilo da početna i završna zvijezda budu ispravno prikazane.",easier,1.000,1.000,2,475,64,577,,,,f,,2026-07-28 20:42:44.568353+00
+31,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-07-28 20:51:47.33545+00
+32,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,4,2,"def sign(n):
+    if n > 0:
+        return 'positive'
+    elif n < 0:
+        return 'negative'
+    else:
+        return 'zero'",3,3,t,,,"Hvala ti što si uspješno riješio zadatak o predznaku broja! To je odlična početak, budući da si uspio iz prvog pokušaja!",advance,0.000,0.340,1,114,48,264,,,,f,,2026-07-28 20:51:48.110008+00
+33,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,5,3,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,"Ostvario si izvanredan rezultat! Svojim uspješnim rješavanjem zadataka, pokazao si da si sposoban student koji je spreman za izazove koji te čekaju u svom nastavku studija.",advance,0.340,0.680,1,118,61,375,,,,f,,2026-07-28 20:51:48.157838+00
+34,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,6,4,"def fizzbuzz_single(n):
+    if n % 3 == 0 and n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)",5,5,t,,,"Čestitke! Ti si zaista talentiran programer, jer si uspio rešiti zadatak FizzBuzz za jedan broj tek u prvom pokušaju! To je veliki početak, nadam se da ćeš nastaviti da tešioš i napreduješ u svom putu prema postajući profesionalni programer!",advance,0.680,1.000,1,117,83,422,,,,f,,2026-07-28 20:51:49.067884+00
+35,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,1,5,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,"Hvala ti na brzom i ispravnom rješenju! Odlično si prošao ovaj zadatak iz prvog pokušaja, što je znak da si stvarno znao šta radiš.",advance,0.000,0.340,1,119,54,375,,,,f,,2026-07-28 20:51:50.00359+00
+36,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,2,6,"def sum_of_range(n):
+    zbir = 0
+    for i in range(1, n + 1):
+        zbir += i
+    return zbir",4,4,t,,,Hvala ti na brzom i ispravnom rješenju! Odlično si pokazao svoje znanje i vještinu rješavanja problema.,advance,0.340,0.680,1,117,42,328,,,,f,,2026-07-28 20:51:50.830597+00
+37,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,3,7,"def reverse_string_forloop(s):
+    reversed_s = """"
+    for char in s:
+        reversed_s = char + reversed_s
+    return reversed_s",4,4,t,,,Sjajno! Iskoristio si for petlju kao što smo to učili i uspio si obrnuti string. To je veliki korak naprijed u svom razvoju kao programer!,advance,0.680,1.000,1,120,49,343,,,,f,,2026-07-28 20:51:51.646613+00
+820,0af26db2-1f9a-4ebb-adb1-29f40ce4ffae,langgraph,1,4,3,"def sign(n):
+    if n > 0:
+        return 'positive'
+    elif n < 0:
+        return 'negative'
+    else:
+        return 'zero'",3,3,t,,,"",advance,0.000,0.340,1,144,150,530,,,,f,,2026-08-26 19:19:39.972016+00
+39,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,9,9,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,"Pogreška je u uvjetu za kraj petlje. Misliš li da će se brojanje završiti kad n bude jednak 0, ali nekad kad n bude veće od 0, pa se u tom slučaju neće ispisati 0. Provjeri uvjete za kraj petlje i ispraviti grešku.",retry,0.000,0.000,2,401,86,640,,,,f,,2026-07-28 20:51:54.658648+00
+40,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,9,10,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,"Ne brini se, to je samo dio učenja! Pogledaj ponovno na zadatak i pokušaj razumjeti što se događa kada koristiš n >= 0. Možda će ti to biti korak prema pravom rješenju!",easier,0.000,0.000,2,401,74,608,,,,f,,2026-07-28 20:52:15.763632+00
+41,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,10,11,"def digit_sum(n):
+    zbir = 0
+    while n > 0:
+        zbir += n % 10
+        n //= 10
+    return zbir",4,4,t,,,Hvala ti na brzom razmišljanju i uspješnom rješavanju zadataka! Odlično si uspio iz prvog pokušaja!,advance,0.000,0.340,1,115,43,235,,,,f,,2026-07-28 20:52:15.834866+00
+42,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,11,12,"def collatz_steps(n):
+    koraci = 0
+    while n != 1:
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = 3 * n + 1
+        koraci += 1
+    return koraci",3,3,t,,,"Željko, bravo! Uspešno si riješio zadatak o Collatz nizu i broju koraka. Vaša brzina i preciznost su bile izuzetne.",advance,0.340,0.680,1,118,49,359,,,,f,,2026-07-28 20:52:16.544964+00
+43,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,7,13,"def multiplication_table(n):
+    rezultat = ''
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            rezultat += str(i * j) + ' '
+        rezultat = rezultat.strip() + '\n'
+    return rezultat",3,3,t,,,"Sretno si! Uspeo si iz prvog pokušaja i napravio tablicu množenja! To je odlično početak, nastavljaj u tom duhu i uspijeće će te čekati!",advance,0.000,0.340,1,115,55,390,,,,f,,2026-07-28 20:52:17.362759+00
+44,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,8,14,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,"Želimo vam srca ispunjena zahvalnost za uspješno rješenje zadataka! Vaša brzina i preciznost su odlične, nastavite u tom duhu!",advance,0.340,0.680,1,119,51,15436,,,,f,,2026-07-28 20:52:18.145035+00
+45,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,12,15,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pomisli na to da si kreirao trokut od zvjezdica koji se sprema u donjem desnom uglu. Zato što se zvjezdice spremaju u donjem desnom uglu, moraš kreirati vanjsku petlju koja prolazi od 0 do n, gdje je n broj redova trokuta. U unutarnjoj petlji, moraš kreirati unutarnju petlju koja prolazi od 0 do i, gdje je i trenutni red. Kada je i jednak ili manji od trenutnog reda, ispiši zvjezdicu.",retry,0.680,0.680,2,475,151,797,,,,f,,2026-07-28 20:52:34.045159+00
+46,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,12,16,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pokusaj ponovo, ali ovaj put zamisli da si započeo brojanje zvjezdica od 0. To će ti omogućiti da pravilno računas broj zvjezdica za svaku vrstu trokuta.",retry,0.680,0.680,2,475,62,15656,,,,f,,2026-07-28 20:52:51.184454+00
+47,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,12,17,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pokusaj ponovno razmotriti zadatak i pomisli na to kako bi zvjezdice bile rasporedene u trokutu. Sjeti se da je range(n) vraća brojeve od 0 do n-1, pa moraš prilagođiti broj zvjezdica u zavisnosti od pozicije u vanjskoj petlji.",easier,0.680,0.680,2,475,93,609,,,,f,,2026-07-28 20:52:52.208397+00
+48,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,8,18,"def count_primes_upto(n):
+    prosti_brojevi = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            prosti_brojevi += 1
+    return prosti_brojevi",4,4,t,,,"""Super posao! Sve je u redu, uspješno si izvršio zadatak brojanje prostih brojeva do n, izuzimanjem 2. pokušaja bio je odličan korak ka uspjehu!""",advance,0.680,1.000,1,119,60,389,,,,f,,2026-07-28 20:52:52.269613+00
+49,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,12,19,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Nastavite da istražujete problem i pokušajte da razumijete što se događa. Pročitajte ponovo zadatak i pokušajte da identifikujete grešku u vašem kodu. Sjetite se da range(n) vraća brojeve od 0 do n-1, pa se pobrinite da to uočite u svom kodu.",easier,1.000,1.000,2,475,95,609,,,,f,,2026-07-28 20:52:53.192222+00
+50,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,8,20,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    primes = [True] * (n + 1)
+    primes[0] = primes[1] = False
+    for i in range(2, int(n ** 0.5) + 1):
+        if primes[i]:
+            for j in range(i * i, n + 1, i):
+                primes[j] = False
+    return sum(primes)",4,4,t,,,"Srećan ti dan! Uspio si izvršiti zadatak brojanja prostih brojeva do n, što je zaista dobro! Trebaš se samo nastaviti boriti i uspijevati, i sigurno ćeš biti vrhunski programer!",advance,1.000,1.000,1,119,66,405,,,,f,,2026-07-28 20:53:14.356783+00
+51,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,12,21,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"""Pažljivo pogledaj svoje računanje broja zvjezdica. Svečice i sada kreće od 0, tako da moraš dodati 1 kako bi dobio ukupan broj zvjezdica.""",easier,1.000,1.000,2,475,60,546,,,,f,,2026-07-28 20:53:15.200407+00
+52,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,8,22,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    prosti_brojevi = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            prosti_brojevi += 1
+    return prosti_brojevi",4,4,t,,,"Hvala ti što si uspio riješiti zadatak! To je veliki uspjeh, posebno nakon 4 pokušaja, što pokazuje da si tvrdoglavi i odan u stvaranju.",advance,1.000,1.000,1,119,54,406,,,,f,,2026-07-28 20:53:16.099812+00
+53,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,12,23,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Imaš pravi pogled na problem! Sjeti se da range funkcija kreće od 0, pa trebaš koristiti range(n+1) ili range(n) i odrediti broj zvjezdica u zavisnosti od vanjske petlje. To će ti pomoći da ispravnije odredi broj zvjezdica.",easier,1.000,1.000,2,475,85,578,,,,f,,2026-07-28 20:53:37.281541+00
+54,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,8,24,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_primitivno = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_primitivno = False
+                break
+        if je_primitivno:
+            brojac += 1
+    return brojac",4,4,t,,,Hvala ti na trudu! Uspešno ste riješili zadatak brojanja prostih brojeva do n. Očekujem da će ti uspjeh u nastavku učenja biti još veći!,advance,1.000,1.000,1,119,54,358,,,,f,,2026-07-28 20:53:38.197274+00
+55,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,12,25,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"""Ne brini se, sve će biti u redu! Pokušaj ponovno razmišliti o tome kako će zvjezdice biti raspoređene u trokut. Sjeti se da se brojevi u range() počinju od 0, tako da ćeš morati prilagoditi svoj izračun broja zvjezdica.""",easier,1.000,1.000,2,475,89,15640,,,,f,,2026-07-28 20:53:39.137904+00
+56,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,8,26,"def count_primes_upto(n):
+    prosti_brojevi = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            prosti_brojevi += 1
+    return prosti_brojevi",4,4,t,,,"Hvala ti što si uspješno riješio zadatak brojanja prostih brojeva do n! To je veliki uspjeh, posebno nakon šestih pokušaja. Nadam se da ćeš nastaviti da se uspješno bavi programiranjem.",advance,1.000,1.000,1,119,71,421,,,,f,,2026-07-28 20:53:55.145251+00
+57,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,12,27,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pokusaj ponovno razmišljati o tome kako će ispravno izračunati broj zvjezdica u ovoj petlji. Sjetite se da range funkcija kreće od 0, pa morate prilagoditi vrednosti koje koristite za izračunavanje broja zvjezdica.",easier,1.000,1.000,2,475,80,656,,,,f,,2026-07-28 20:53:56.129228+00
+58,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,8,28,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    primes = [True] * (n + 1)
+    primes[0] = primes[1] = False
+    for i in range(2, int(n ** 0.5) + 1):
+        if primes[i]:
+            for j in range(i * i, n + 1, i):
+                primes[j] = False
+    return sum(primes)",4,4,t,,,"Željko, osvojio si zadatak brojanja prostih brojeva do n! To je veliki uspjeh, osobito nakon 7 pokušaja. Pozdrav i nastavak uspješne karijere!",advance,1.000,1.000,1,119,58,297,,,,f,,2026-07-28 20:53:57.248372+00
+59,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,12,29,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Ispod je kratka ohrabrujuća podsjetnica koja će usmjeriti studenta ka ispravci:
+
+""Pogledajte ponovo na zadatak i razmislite o tome što ste zapravo tražili. Što se događa kad krećete od 0? Kako to utječe na broj zvjezdica koje će se ispisati?""",easier,1.000,1.000,2,475,97,640,,,,f,,2026-07-28 20:54:18.106395+00
+60,301f5b01-5bf2-4d7b-9602-9e65d44da1e3,langgraph,1,8,30,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    primes = 0
+    for candidate in range(2, n + 1):
+        is_prime = True
+        for divisor in range(2, int(candidate ** 0.5) + 1):
+            if candidate % divisor == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes += 1
+    return primes",4,4,t,,,"Hvala što si uspio riješiti zadatak! Odlično što si se nije dao i nastavio pokušavati, a sada si stvarno uspio!",advance,1.000,1.000,1,119,42,344,,,,f,,2026-07-28 20:54:19.19959+00
+61,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-07-28 20:55:33.176411+00
+62,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,4,2,"def sign(n):
+    if n > 0:
+        return 'positive'
+    elif n < 0:
+        return 'negative'
+    else:
+        return 'zero'",3,3,t,,,"Hvala ti što si uspješno riješio zadatak o predznaku broja! Osvajanje zadatak od prvog pokušaja je veliki uspjeh, zadrži ovaj ritam i nastavi napredovati u svijetu programiranja!",advance,0.000,0.340,1,114,68,375,,,,f,,2026-07-28 20:55:34.00184+00
+63,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,5,3,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,"Ostvario si izvanredan rezultat! Odlično si uspio riješiti zadatak iz prvog pokušaja, što je velik uspjeh!",advance,0.340,0.680,1,118,42,313,,,,f,,2026-07-28 20:55:34.012706+00
+64,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,6,4,"def fizzbuzz_single(n):
+    if n % 3 == 0 and n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)",5,5,t,,,"""Želimo vam srce u grlu! Vaša riješena FizzBuzz za jedan broj je odlična i predstavlja dobar početak u svijetu programiranja.""",advance,0.680,1.000,1,117,49,296,,,,f,,2026-07-28 20:55:34.826566+00
+65,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,1,5,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n+1))",3,3,t,,,Ostvario si izvanredan rezultat! Zadovoljstvo je vidjeti kako si uspio riješiti zadatak od prvog pokušaja. To je znak da si dobro pripremio i da imaš solidnu osnovu za daljnje učenje.,advance,0.000,0.340,1,119,71,483,,,,f,,2026-07-28 20:55:35.546969+00
+66,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,2,6,"def sum_of_range(n):
+    zbir = 0
+    for i in range(1, n + 1):
+        zbir += i
+    return zbir",4,4,t,,,Hvala ti što si uspješno riješio zadatak u prvom pokušaju! Odlično si pokazao svoje znanje i vještine u programu.,advance,0.340,0.680,1,117,46,281,,,,f,,2026-07-28 20:55:36.366187+00
+67,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,3,7,"def reverse_string_forloop(s):
+    reversed_s = """"
+    for char in s:
+        reversed_s = char + reversed_s
+    return reversed_s",4,4,t,,,"Hvala ti na brzom rješenju zadataka! Uspio si obrnuti string pomoću for petlje na prvom pokušaju, što je veliki uspjeh!",advance,0.680,1.000,1,120,47,280,,,,f,,2026-07-28 20:55:37.104913+00
+68,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,9,8,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,Pogledajte ponovo kriterijum za uvjet n > 0. To znači da će se brojanje nastaviti za uvijek i jedanput kad n bude 0. Zbog toga morate dodati uvjet da se brojanje nastavi i kada n bude 0.,retry,0.000,0.000,2,401,77,547,,,,f,,2026-07-28 20:55:37.73399+00
+69,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,9,9,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,"Pokusaj ponovo razmišliti o uvjetu n > 0. Uvjet n >= 0 će uključiti slučaj kada je n jednak 0, što nije ispravno za odbrojavanje od 0. Pokušaj zamisliti što će se dogoditi ako bi se n >= 0 koristilo za odbrojavanje od 0.",retry,0.000,0.000,2,401,97,640,,,,f,,2026-07-28 20:55:39.53032+00
+70,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,9,10,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,"Nemoj se brinuti ako nisi došao do iskrene riješene verzije! To je dio procesa učenja. Pokušaj ponovno razmišljati o zadataku i probaj ispraviti tu grešku. Kao što reče stari reč: ""Ko pokuša, pobjeđuje!""",easier,0.000,0.000,2,401,88,764,,,,f,,2026-07-28 20:55:40.657841+00
+71,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,10,11,"def digit_sum(n):
+    zbir = 0
+    while n > 0:
+        zbir += n % 10
+        n //= 10
+    return zbir",4,4,t,,,"Hvala na uspješnom rješenju zadataka! Odlično si pokazao svoje znanje i sposobnost za programiranje, a što je još važnije, to je bilo prvi pokušaj!",advance,0.000,0.340,1,115,59,280,,,,f,,2026-07-28 20:55:40.668352+00
+72,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,11,12,"def collatz_steps(n):
+    koraci = 0
+    while n != 1:
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = 3 * n + 1
+        koraci += 1
+    return koraci",3,3,t,,,"Bravo, izuzetno si uspješan! Vaša rješenja za Collatz niz i broj koraka su odlična, bez grešaka.",advance,0.340,0.680,1,118,42,233,,,,f,,2026-07-28 20:55:41.307959+00
+73,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,7,13,"def multiplication_table(n):
+    table = ''
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            table += str(i * j) + ' '
+        table = table.strip() + '\n'
+    return table.strip()",3,3,t,,,"Hvala ti što si uspio riješiti zadatak o tablici množenja! To je velik uspjeh, posebno što si ga uspio iz prvog pokušaja!",advance,0.000,0.340,1,115,47,311,,,,f,,2026-07-28 20:55:41.889066+00
+74,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,8,14,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    prosti_brojevi = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            prosti_brojevi += 1
+    return prosti_brojevi",4,4,t,,,Samo odlično! Brzo si shvatio što treba da uradiš i uspješno si riješio zadatak!,advance,0.340,0.680,1,119,35,234,,,,f,,2026-07-28 20:55:42.53479+00
+75,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,12,15,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Dobro, studentu! Kada koristiš range(n), ne zaboravi da je n početak, a ne kraj. Pogledaj ponovo u zadatak i ispuni vanjsku petlju tako da kreće od 0 i ide do n. To će ti pomognuti da ispravno nacrtaš trokut od zvjezdica.",retry,0.680,0.680,2,475,87,577,,,,f,,2026-07-28 20:55:43.324916+00
+76,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,12,16,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pokusaj ponovo i razmisli o tome kako bi trebao računati broj zvjezdica u svakoj iteraciji. Sjeti se da range(n) vraća brojeve od 0 do n-1, tako da trebaš prilagoditi računanje broja zvjezdica prema tome.",retry,0.680,0.680,2,475,82,501,,,,f,,2026-07-28 20:56:05.082178+00
+77,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,12,17,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Ne brini, sve će biti u redu! Pogledaj nekoliko puta na zadatak i pokušaj razumjeti šta se događa. U slučaju da koristiš range(n) za vanjsku petlju, moraš započeti brojanje od 0, jer ćeš imati n+1 redova u trokutu. To će te vratiti na pravu stazu ka rješenju!",easier,0.680,0.680,2,475,110,15686,,,,f,,2026-07-28 20:56:21.111368+00
+78,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,8,18,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,"Svakako, ti si vrstan student! Svojim trudom i istraživanjem, uspio si riješiti zadatak i to tek u drugom pokušaju, što je znak da si spreman za izazove koje te čekaju u budućnosti!",advance,0.680,1.000,1,119,66,344,,,,f,,2026-07-28 20:56:21.11959+00
+79,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,12,19,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Sjeti se da je range(n) uključuje 0, tako da će se zvjezdice početi prikazivati odmah od prvog reda. Provjeri je li broj zvjezdica u svakoj liniji u skladu s brojem redova u trokutu.",easier,1.000,1.000,2,475,73,530,,,,f,,2026-07-28 20:56:21.876548+00
+80,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,8,20,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,"Žao mi je što si morao probati tri puta, ali srećom si uspio riješiti zadatak! Hvala što si se trudio i uspio dobro izvršiti zadatak brojanja prostih brojeva do n.",advance,1.000,1.000,1,119,60,296,,,,f,,2026-07-28 20:56:22.747891+00
+81,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,12,21,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Nema brige, to je normalna greška koja se često događa kod početnika. Sjeti se da range(n) kreće od 0, pa moraš prilagoditi svoj račun broja zvjezdica prema tome. Pokušaj ponovno, i sigurno će ti uspjeti!",easier,1.000,1.000,2,475,85,530,,,,f,,2026-07-28 20:56:43.529057+00
+82,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,8,22,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,"Želimo vam hvala što ste uspješno riješili zadatak brojanja prostih brojeva do n! Vaša truda i strpljenja isplacili su se, i srećno ste uspjeli dobiti odgovor na 4. pokušaju.",advance,1.000,1.000,1,119,74,311,,,,f,,2026-07-28 20:56:44.304971+00
+83,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,12,23,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"""Pažljivo pregledaj kôd i pokušaj da razumiješ što se događa! Kada koristiš range(n), ne znači da krećeš od 1, već od 0. Pokušaj da ispraviš taj pogrešak i vidiš da li ćeš dobiti željeni trokut od zvjezdica.""",easier,1.000,1.000,2,475,96,15750,,,,f,,2026-07-28 20:56:44.995741+00
+84,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,8,24,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,"Hvala ti na trudu i odvažnosti! Uspešno ste riješili zadatak brojanja prostih brojeva do n, što je zahtijevani nivo znanja u 5 pokušaja - to je nešto što će te podići na viši nivo u programu!",advance,1.000,1.000,1,119,74,343,,,,f,,2026-07-28 20:57:01.009801+00
+85,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,12,25,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,Pogreška je u tome što nisi koristio range(n+1) ili njužnu metodu za računanje broja zvjezdica. Pokušaj ponovno razmisliti o tome kako ćeš računati broj zvjezdica u svakoj iteraciji vanjske petlje.,easier,1.000,1.000,2,475,79,15625,,,,f,,2026-07-28 20:57:01.681801+00
+86,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,8,26,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,Hvala ti što si uspio rešiti zadatak! Svakako si ispunio svoj cilj i pokazao samu odanost i trud. Ovo je velik uspjeh!,advance,1.000,1.000,1,119,47,281,,,,f,,2026-07-28 20:57:17.634169+00
+87,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,12,27,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pokusaj ponovo! Sjeti se da range(n) vraća brojeve od 0 do n-1, pa moraš prilagoditi broj zvjezdica u ovisnosti o tome. Pogledaj ponovo kôd i ispravljaj grešku.",easier,1.000,1.000,2,475,71,485,,,,f,,2026-07-28 20:57:18.400981+00
+88,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,8,28,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,"Hvala ti što si uspio riješiti zadatak! Vaša truda i odreda su se zapravo isplatili, jer si uspio iz 7. pokušaja. To je veliki uspjeh!",advance,1.000,1.000,1,119,55,281,,,,f,,2026-07-28 20:57:19.278568+00
+89,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,12,29,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pomoći ću ti, ali neću dajati direktan odgovor. Pokušaj ponovno razmišljati o tomu kako će kreirati trokut od zvjezdica. Uočio si li da moraš uzeti u obzir širinu trokuta kada krećes od 0?",easier,1.000,1.000,2,475,83,514,,,,f,,2026-07-28 20:57:40.094994+00
+90,8f0f9f43-9f3b-45eb-898d-fccff2093da7,langgraph,1,8,30,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    prosti_brojevi = [True] * (n + 1)
+    prosti_brojevi[0] = prosti_brojevi[1] = False
+    for i in range(2, int(n ** 0.5) + 1):
+        if prosti_brojevi[i]:
+            for j in range(i * i, n + 1, i):
+                prosti_brojevi[j] = False
+    return sum(prosti_brojevi)",4,4,t,,,"Super posao! Srećan si što si uspio riješiti zadatak, iako je bilo potrebno nekoliko pokušaja više. To ti pokazuje da si stvarno zainteresiran i odan za programiranje.",advance,1.000,1.000,1,119,62,281,,,,f,,2026-07-28 20:57:40.94627+00
+91,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-07-28 20:57:41.661143+00
+92,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,4,2,"def sign(n):
+    if n > 0:
+        return 'positive'
+    elif n < 0:
+        return 'negative'
+    else:
+        return 'zero'",3,3,t,,,"Želimo vam srca u grlu! Uspešno ste riješili zadatak o predznaku broja na prvom pokušku, što je izvrstan početak!",advance,0.000,0.340,1,114,45,250,,,,f,,2026-07-28 20:57:42.280756+00
+93,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,5,3,"def grade(score):
+    if score > 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",6,7,f,wrong_boundary_operator,wrong_boundary_operator,Dođi do kraja! Razmisli što bi se dogodilo ako bi bili student koji koristi vaš program. Kako bi on to koristio? Možda bi i on napravio istu grešku. Pokaži mu da je vaš program poučan i da će ga pomoći da nauči od svoje greške.,retry,0.340,0.340,2,459,84,578,,,,f,,2026-07-28 20:57:42.323849+00
+94,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,5,4,"def grade(score):
+    if score >= 60:
+        return 'D'
+    elif score >= 70:
+        return 'C'
+    elif score >= 80:
+        return 'B'
+    elif score >= 90:
+        return 'A'
+    else:
+        return 'F'
+",2,7,f,wrong_boundary_operator,unordered_conditions,"Ne brini se, sve će biti u redu! Neka ti se uđe u glavu da si moguće samo bodovi koji su ili jednak ili veći od granice, a ne samo veći. Tako će ti se sve objasnit!",retry,0.340,0.340,2,459,63,15670,,,,f,,2026-07-28 20:58:20.228724+00
+95,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,5,5,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,"Hvala ti na trudima i odvažnosti! Uspešno ste izvršili zadatak u 3 pokušaja, što pokazuje vašu odgovornost i želju za naučivanjem.",advance,0.340,0.680,1,118,54,250,,,,f,,2026-07-28 20:58:20.829526+00
+96,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,6,6,"def fizzbuzz_single(n):
+    if n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    elif n % 3 == 0 and n % 5 == 0:
+        return 'FizzBuzz'
+    else:
+        return str(n)
+",3,5,f,wrong_condition_order,wrong_condition_order,"Ne brini, sve će biti u redu! Pogledaj još jednom kod i provjeri da li si ispravno provjeravao djeljivost s 3 i 5. U slučaju da je broj 15, moraš provjeriti i djeljivost s 5, a zatim ispisati 'FizzBuzz'.",retry,0.680,0.680,2,470,88,609,,,,f,,2026-07-28 20:58:20.870299+00
+97,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,6,7,"def fizzbuzz_single(n):
+    if n % 3 == 0 or n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)
+",3,5,f,wrong_condition_order,wrong_logical_operator,"Pokusaj ponovo! Kada se radi o FizzBuzz-u, uvijek provjeravaj najprije djeljivost s 15, a zatim s ostalim brojevima. To će ti pomoći da ne pomisliš na pogrešku kao što si ju sada napravio.",retry,0.680,0.680,2,470,75,498,,,,f,,2026-07-28 20:59:04.489764+00
+98,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,6,8,"def fizzbuzz_single(n):
+    if n % 3 == 0 and n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)",5,5,t,,,"""Bravo! Uspešno ste riješili zadatak FizzBuzz za jedan broj na trećem pokušaju. Vaša strast i odanost učenju su vam donijele uspjeh!""",advance,0.680,1.000,1,117,56,264,,,,f,,2026-07-28 20:59:05.121716+00
+99,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,1,9,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n+1))",3,3,t,,,"Hvala na uspješno završenom zadataku! Odlično si se pripremio i uspio iz prvog pokušaja, što je velik uspjeh!",advance,0.000,0.340,1,119,44,265,,,,f,,2026-07-28 20:59:05.166476+00
+100,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,2,10,"def sum_of_range(n):
+    zbir = 0
+    for i in range(1, n):
+        zbir += i
+    return zbir",1,4,f,off_by_one_range,off_by_one_range,"Pokusaj još jednom! Razmišlaj o tome: ako želimo da sakupimo sve brojeve od 1 do n, moramo uključiti i n u sakupljanje. Provjeri svoj kôd i vidjet ćeš da je to jednostavno riješenje.",retry,0.340,0.340,2,483,81,563,,,,f,,2026-07-28 20:59:05.764106+00
+101,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,2,11,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n + 1):
+        total = i
+    return total",2,4,f,accumulator_not_reset,accumulator_not_reset,"Pokusaj ponovno razmišljati o tome kako će sakupljati vrijednosti u petlji. U ovom slučaju, inicijaliziraj total van petlje, tako da bude dostupan izvan nje i može se koristiti za izračun sume.",retry,0.340,0.340,2,491,74,468,,,,f,,2026-07-28 20:59:27.952726+00
+102,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,2,12,"def sum_of_range(n):
+    zbir = 0
+    for i in range(1, n + 1):
+        zbir += i
+    return zbir",4,4,t,,,"Hvala ti na trudu i odvažnosti! Uspešno si riješio zadatak sume raspona brojeva, i to tek u trećem pokušaju - to je veliki uspjeh!",advance,0.340,0.680,1,117,53,296,,,,f,,2026-07-28 20:59:28.548741+00
+103,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,3,13,"def reverse_string_forloop(s):
+    result = ''
+    for ch in s:
+        result = result + ch
+    return result
+",2,4,f,wrong_concatenation_order,wrong_concatenation_order,"Pokusaj ponovo, ali ovaj put misli na to da kreirajuš novi string koji će sadržavati karaktere iz originalnog stringa, ali obrnutim redoslijedom. Imajte na umu da morate dodavati karaktere u početku nove stvari, a ne na kraju.",retry,0.680,0.680,2,413,81,593,,,,f,,2026-07-28 20:59:28.587061+00
+104,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,3,14,"def reverse_string_forloop(s):
+    reversed_s = """"
+    for char in s:
+        reversed_s = char + reversed_s
+    return reversed_s",4,4,t,,,Srećan si što si uspio obrnuti string pomoću for petlje! Vaša brza učenost i želja za napredovanjem su odlični znaci za buduću karijeru u programiranju.,advance,0.680,1.000,1,120,59,313,,,,f,,2026-07-28 20:59:50.954277+00
+105,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,9,15,"def countdown(n):
+    i = n
+    while i >= 1:
+        print(i)
+        i = i - 1",0,3,f,off_by_one_condition,missing_decrement,"Pokusaj ponovo, ali ovaj put obrati pažnju na početni uvjet za n. Nije samo o tome da n nije negativan, već i da je n istinski veći od nule. Misliš da si mogao učiniti nešto drugačije?",retry,0.000,0.000,2,408,72,15655,,,,f,,2026-07-28 20:59:51.033151+00
+106,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,9,16,"def countdown(n):
+    while n >= 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,off_by_one_condition,"Pokusaj ponovno razmišljati o ograničenju n. U odbrojavanju, kada se broji od 0 do n, onda mora biti n > 0, jer ako je n = 0, onda neće biti nikakvog brojanja. Pokušaj ispraviti tu grešku i vidjeti da li će se rezultat promijeniti.",retry,0.000,0.000,2,401,101,515,,,,f,,2026-07-28 21:00:08.103469+00
+107,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,9,17,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,"Pogledajte opet zadatak i pokušajte se koncentrirati na detalje. U ovom slučaju, morate koristiti uvjet n > 0, kako biste izbjegli ispis 0 na kraju. To će vam pomoći da ispravite grešku i dođete do ispravne rješenja.",easier,0.000,0.000,2,401,91,15655,,,,f,,2026-07-28 21:00:24.148903+00
+108,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,10,18,"def digit_sum(n):
+    zbir = 0
+    while n > 0:
+        zbir += n % 10
+        n //= 10
+    return zbir",4,4,t,,,"Sretno ste! Vaša rješenja je bilo tačno na prvi pokušaj, što je znak da ste dobro razumjeli zadatak i primijenili algoritam ispravno. Nadam se da će ovaj uspjeh biti samo početak vašeg uspješnog puta u svijetu programiranja!",advance,0.000,0.340,1,115,88,389,,,,f,,2026-07-28 21:00:24.244932+00
+109,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,11,19,"def collatz_steps(n):
+    koraci = 0
+    while n != 1:  # korak 1
+        if n % 2 == 0:  # korak 2
+            n = n / 2  # korak 3
+            koraci += 1
+        else:
+            n = n * 3 + 1  # korak 4
+            koraci += 1
+    return koraci + 1",0,3,f,wrong_termination_condition,wrong_termination_condition,"Sjeti se da korak koji se broji predstavlja broj iteracija petlje, što znači da se mora broj koraka povećavati samo nakon što se izvrši jedna iteracija. Također, moraš razumjeti što se događa kada ulazni broj bude 1, jer u tom slučaju se ne izvršava ni jedna iteracija.",retry,0.340,0.340,2,525,104,577,,,,f,,2026-07-28 21:00:24.964671+00
+110,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,11,20,"def collatz_steps(n):
+    koraci = 0
+    while n != 1:
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = 3 * n + 1
+        koraci += 1
+    return koraci",3,3,t,,,"Hvala ti na trudima! Odlično si riješio zadatak iz drugog pokušaja, a Collatz niz je zapravo zanimljiva tema u teoriji brojeva. Nadam se da će ti uspješno rješenje donijeti novu motivaciju za dalje učenje i istraživanje.",advance,0.340,0.680,1,118,84,313,,,,f,,2026-07-28 21:00:45.188491+00
+111,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,7,21,"def multiplication_table(n):
+    for i in range(n):
+        for j in range(1, n+1):
+            print(j * (i + 1), end=' ')
+        print()",0,3,f,swapped_loop_variables,off_by_one_inner_loop,"Pokusaj ponovo razmišljati o svojoj logici. U tablici množenja, stupci predstavljaju vrednosti koje se množe, dok su redovi vrednosti koje se množe. Pokušaj se koncentrirati na tačno povezivanje stupaca i redova.",retry,0.000,0.000,2,429,84,562,,,,f,,2026-07-28 21:00:45.26009+00
+112,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,7,22,"def multiplication_table(n):
+    table = ''
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            table += str(i * j) + ' '
+        table = table.strip() + '\n'
+    return table.strip()",3,3,t,,,"Srećan si što si uspio riješiti zadatak! To je odličan rezultat, posebno što si uspio iz drugog pokušaja.",advance,0.000,0.340,1,115,42,219,,,,f,,2026-07-28 21:00:47.015889+00
+113,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,8,23,"def count_primes_upto(n):
+    brojevi = list(range(2, n+1))
+    broj_prostih = 0
+    for prost in brojevi:
+        for kandidat in brojevi:
+            if kandidat < prost:
+                if prost % kandidat == 0:
+                    broj_prostih -= 1
+                    break
+        else:
+            broj_prostih += 1
+    return broj_prostih",2,4,f,wrong_inner_range,one_counted_as_prime,"Dobro, studentu! Proglašanje svakog broja neprostim zbog dijeljenja samog sebe je pogreška. Pogledaj što se događa kada dijelimo broj do njega samog, a ne do njega minus jedan. To će ti pomoći da napravi ispravku!",retry,0.340,0.340,2,554,85,499,,,,f,,2026-07-28 21:00:47.069291+00
+114,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,8,24,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    prosti_brojevi = 0
+    for i in range(2, n + 1):
+        prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                prost = False
+                break
+        if prost:
+            prosti_brojevi += 1
+    return prosti_brojevi",4,4,t,,,"Hvala ti što si uspio riješiti zadatak, to je veliki uspjeh! Svakom pokušaju bliži sišu cilju, a što si uspio iz 2. pokušaja, to je još bolje.",advance,0.340,0.680,1,119,60,296,,,,f,,2026-07-28 21:01:08.882386+00
+115,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,12,25,"def star_triangle(n):
+    rezultat = """"
+    for i in range(n):
+        if i == 0:
+            rezultat += ""*\n""
+        else:
+            for j in range(i):
+                rezultat += ""*""
+            rezultat += ""\n""
+    return rezultat",1,3,f,off_by_one_star_count,off_by_one_star_count,"Sjajno što si došao do ovog koraka! Zadovoljstvo je što vidiš gdje je problem. Sada samo malo pogledaj ponovo na unos zvjezdica u unutrašnjoj petlji i zamisli se: koliko zvjezdica treba biti na svakom redu, počevši od prvog reda. To će ti pomoći da ispraviš grešku!",retry,0.680,0.680,2,516,106,610,,,,f,,2026-07-28 21:01:08.935332+00
+116,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,12,26,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,Nemoj se brinuti! Sve se može popraviti. Pogledaj bolje na kod i misli o tome kako bi zvjezdice bile simetrično rasporedene u trokutu. Možeš to učiniti promjenom početne vrijednosti ili dodavanjem jedne dodatne varijable za spremanje broja zvjezdica.,retry,0.680,0.680,2,475,91,594,,,,f,,2026-07-28 21:01:31.364282+00
+117,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,12,27,"def star_triangle(n):
+    for i in range(n):
+        for j in range(i+1):
+            print(""*"", end="""")
+        print()",0,3,f,,extra_space_added,"Ne brini se, ovo je normalan dio učenja! Pogledaj ponovno na zadatak i pokušaj identificirati što nije ispravno. Možeš se pitati sebe: ""Šta sam mislio učiniti?"" ili ""Što sam pogriješio?"" Ova sam razmišljanja će ti pomoći da shvatiš što se događalo i kako ćeš izbjegavati slične greške u budućnosti.",easier,0.680,0.680,2,445,119,15766,,,,f,,2026-07-28 21:01:47.677705+00
+118,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,8,28,"def count_primes_upto(n):
+    is_prime = False
+    count = 0
+    for i in range(2, n + 1):
+        if i % 2 == 0 and i > 2:
+            is_prime = False
+        if is_prime:
+            count += 1
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                is_prime = False
+                break
+    return count",1,4,f,flag_not_reset,flag_not_reset,"Pokusaj da razumiješ što se događa. Kada se broj koji nije prost (npr. 4) proveri kao prost, is_prime će biti postavljen na False. Ali onda će se i naredni brojevi koji su manji od 4 smatrati neprobnim jer će is_prime biti False. Pokušaj da resetuješ is_prime na True za svaki novi broj koji se proverava.",easier,0.680,0.680,2,547,111,15766,,,,f,,2026-07-28 21:01:47.728064+00
+119,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,7,29,"def multiplication_table(n):
+    for i in range(n):
+        for j in range(n):
+            print(j * (i + 1), end=' ')
+        print()",0,3,f,swapped_loop_variables,off_by_one_inner_loop,"Sjeti se da je tablica množenja matrice 5x5 jednaka samoj sebi kao i njena transponacija, ali samo ako je matrica simetrična. U ovom slučaju, tablica množenja nije simetrična, pa je studentova greška u zamjeni i i j u računu pogrešna.",easier,0.680,0.680,2,424,90,482,,,,f,,2026-07-28 21:02:04.287135+00
+120,19656e20-e1ca-4d16-beb2-69f364edb720,langgraph,2,8,30,"def count_primes_upto(n):
+    for i in range(2, n + 1):
+        for j in range(2, i):
+            if i % j == 0:
+                break
+        else:
+            print(i)",0,4,f,wrong_inner_range,one_counted_as_prime,"Pokusaj ponovo. Kada provjeravate djeljivost, mislite na djeljivost do broja koji ste zadali kao granicu, ali zapravo trebate provjeravati djeljivost do broja koji je jedan manji od te granice. To će vam pomoći da ispravno brojate prosti brojevi do zadane granice.",easier,0.680,0.680,2,501,97,15686,,,,f,,2026-07-28 21:02:05.190342+00
+121,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-07-28 21:02:21.335623+00
+122,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,4,3,"def sign(n):
+    if n > 0:
+        return 'positive'
+    else:
+        return 'negative'",2,3,f,missing_zero_case,missing_zero_case,"Pokusaj ponovo! Kada se upustiš u istraživanje predznaka broja, misli na sve moguće slučajeve. U slučaju kada broj bude 0, ne treba da ga svrstavamo u pozitivne ili negativne brojeve. Pogledaj kako da se to riješi!",retry,0.000,0.000,2,403,85,15671,,,,f,,2026-07-28 21:02:37.858481+00
+123,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,4,4,"def sign(n):
+    if n >= 0:
+        return 'positive'
+    else:
+        return 'negative'",2,3,f,wrong_comparison_operator,wrong_comparison_operator,"Ne brini se, sve će biti u redu! Provjeri da li si koristio ispravno znak za prelazak, > ili <, i zapamti da >= znači ""manje ili jednako"", što nije isto kao ""veće od"".",easier,0.000,0.000,2,392,66,483,,,,f,,2026-07-28 21:02:38.932727+00
+124,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,5,5,"def grade(score):
+    if score >= 60:
+        return 'D'
+    elif score >= 70:
+        return 'C'
+    elif score >= 80:
+        return 'B'
+    elif score >= 90:
+        return 'A'
+    else:
+        return 'F'
+",2,7,f,wrong_boundary_operator,unordered_conditions,"""Pažljivo provjeri svoju logiku, paće li ti na pamet da koristiš >= umjesto >, da bi se osigurao da sve bodove ispravno obrađuje.""",retry,0.000,0.000,2,459,53,469,,,,f,,2026-07-28 21:02:38.988526+00
+125,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,5,6,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,"Hvala ti što si uspješno završio zadatak! Odlično ste radili na tome, i drugi pokušaj je bio dovoljan za uspjeh.",advance,0.000,0.340,1,118,44,264,,,,f,,2026-07-28 21:03:01.293321+00
+126,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,6,7,"def fizzbuzz_single(n):
+    if n % 3 == 0 or n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)
+",3,5,f,wrong_condition_order,wrong_logical_operator,"Pokusaj ponovo, misliš na to kako će se odnositi brojevi koji su djeljivi s 3 i 5, pa će tako i brojevi koji su djeljivi s 15 morati ispunjavati oba uslova. To će ti pomognuti da postignes tačan rezultat.",retry,0.340,0.340,2,470,82,514,,,,f,,2026-07-28 21:03:01.33968+00
+127,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,6,8,"def fizzbuzz_single(n):
+    if n % 3 == 0 and n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)",5,5,t,,,"Hvala ti na trudima! Odličan posao na FizzBuzzu za jedan broj, pozdrav od prijateljskog tutora!",advance,0.340,0.680,1,117,38,235,,,,f,,2026-07-28 21:03:23.522467+00
+128,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,1,12,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n+1))",3,3,t,,,"Hvala ti na trudu i odvažnosti! Uspio si riješiti zadatak nakon 4 pokušaja, što je veoma dobar rezultat!",advance,0.000,0.340,1,119,41,233,,,,f,,2026-07-28 21:03:23.566629+00
+129,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,2,13,"def sum_of_range(n):
+    zbir = 0
+    for i in range(1, n + 1):
+        zbir += i
+    return zbir",4,4,t,,,Hvala ti na uspješnom rješenju zadataka! Odlično si prikazao svoje znanje i brzinu u rješavanju problema.,advance,0.340,0.680,1,117,42,265,,,,f,,2026-07-28 21:03:45.081411+00
+130,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,3,14,"def reverse_string_forloop(s):
+    reversed_s = """"
+    for char in s:
+        reversed_s = char + reversed_s
+    return reversed_s",4,4,t,,,"Hvala na uspješnom rješenju! Odlično si obrnuto string, koristeći for petlju - to je vrlo dobar početak u svijetu programiranja!",advance,0.680,1.000,1,120,47,296,,,,f,,2026-07-28 21:03:45.632105+00
+131,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,9,15,"def countdown(n):
+    while n >= 0:
+        print(n)
+        n = n - 1",0,3,f,off_by_one_condition,off_by_one_condition,Pokusaj ponovo razmišljati o uvjetu ispod kojeg ćeš izvršavati odbrojavanje. Što će se dogoditi ako unositi n = 0?,retry,0.000,0.000,2,403,53,15561,,,,f,,2026-07-28 21:03:46.242818+00
+132,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,9,16,"def countdown(n):
+    i = n
+    while i > 0:
+        print(i)
+        i -= 1",0,3,f,off_by_one_condition,missing_decrement,"""Što se tične odbrojavanje, pamti da uvjet za početni broj treba biti n > 0, a ne n >= 0. To će ti spriječiti da se broj 0 pojavi kao rezultat odbrojavanja.""",retry,0.000,0.000,2,406,71,453,,,,f,,2026-07-28 21:04:02.984277+00
+133,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,9,17,"def countdown(n):
+    while n >= 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,off_by_one_condition,"Nema problema, student! To je normalan korak u učenju. Uočio si da se zadatak može poboljšati, ali ne znas kako? Ponovo pogledaj odbrojavanje i misli na to kako bi se moglo izbjeći dodavanje 0 na kraju.",easier,0.000,0.000,2,401,79,15686,,,,f,,2026-07-28 21:04:19.00787+00
+134,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,10,18,"def digit_sum(n):
+    while n > 0:
+        n //= 10  # ovaj redak nije ažuriran unutar petlje, što će izazvati beskonačnu petlju
+        pass
+    return n",1,4,f,missing_update_infinite_loop,missing_update_infinite_loop,"Pogreška je u tome što nisi ažurirao vrijednost n unutar petlje, što vodi do beskonačne petlje. Pokušaj ponovno razmišljati o tome kako ćeš ažurirati n nakon svake iteracije i pokušaj ponovno napisati rješenje.",retry,0.000,0.000,2,498,88,593,,,,f,,2026-07-28 21:04:19.054756+00
+135,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,10,20,"def digit_sum(n):
+    while n > 0:
+        n //= 10
+        n += n // 10",0,4,f,missing_update_infinite_loop,missing_update_infinite_loop,"Pokusaj da razumiješ što se događa. Beskonačna petlja je kao da se tičes u kružnu stazu i ne možeš izaći. U ovom slučaju, petlja se ponavlja dok ne bude prekinuta, što neće nikad dogoditi se ako je broj velik. Pokušaj da razumiješ što se događa i kako bi mogao sprečiti ovu grešku.",easier,0.000,0.000,2,469,116,593,,,,f,,2026-07-28 21:04:41.820335+00
+136,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,9,21,"def countdown(n):
+    i = n
+    while i >= 1:
+        print(i)
+        i -= 1",0,3,f,off_by_one_condition,missing_decrement,Pokusaj ponovo. Sjedenje na ovaj zadatak će te natjercati da bolje razumeš osnovne koncepte odbrojavanja u programu. Mislim da ćeš uspjeti da ga riješiš!,easier,0.000,0.000,2,406,64,483,,,,f,,2026-07-28 21:04:41.829013+00
+137,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,10,22,,,,,,,,,,,0,0,0,0,,,,t,"HTTPConnectionPool(host='localhost', port=8090): Read timed out. (read timeout=15)",2026-07-28 21:04:42.655647+00
+138,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,10,23,"def digit_sum(n):
+    zbir = 0
+    while n > 0:
+        zbir += n % 10
+        n //= 10
+    return zbir",4,4,t,,,"Žao mi je što ste morali probati pet puta, ali srećom ste uspješno riješili zadatak! Hvala što ste se trudili i nastavili pokušavati sve dok niste uspješno završili zadatak.",advance,0.000,0.340,1,115,66,280,,,,f,,2026-07-28 21:05:19.305771+00
+139,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,11,24,"def collatz_steps(n):
+    koraci = 0
+    while n != 1:
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = 3 * n + 1
+        koraci += 1
+    return koraci",3,3,t,,,"Hvala ti na brzom rješenju zadataka! Odlično si pokazao da si sposoban programer, posebno što si uspio rešiti zadatak iz prvog pokušaja.",advance,0.340,0.680,1,118,52,265,,,,f,,2026-07-28 21:05:19.311436+00
+140,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,7,25,"def multiplication_table(n):
+    table = ''
+    for i in range(1, n+1):
+        for j in range(1, n+1):
+            table += str(i*j) + ' '
+        table += '\n'
+    return table",1,3,f,swapped_loop_variables,swapped_loop_variables,"Pokusaj ponovno razmišljati o problemu i pokušaj identificirati grešku u svom rješenju. Možda će te pritisnuti misao da je vaše rješenje bilo skoro ispravno, ali ne baš...",retry,0.000,0.000,2,442,70,530,,,,f,,2026-07-28 21:05:19.989227+00
+141,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,7,27,"def multiplication_table(n):
+    table = """"
+    for i in range(n):
+        for j in range(n):
+            table += str(i * (j + 1)) + "" ""
+        table += ""\n""
+    return table",0,3,f,swapped_loop_variables,off_by_one_inner_loop,"Pokusaj ponovo razmišljati o tome kako se računa množenje tablice. Sjeti se da se u matematici redovi i stupci broje po slijedu, a ne po obrnutom redu. Sada je vrijeme da ponovo pogledaš račun i dođeš do ispravnog rješenja!",easier,0.000,0.000,2,437,90,15733,,,,f,,2026-07-28 21:05:37.847289+00
+142,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,8,28,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    prosti_brojevi = 0
+    for i in range(2, n + 1):
+        prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                prost = False
+                break
+        if prost:
+            prosti_brojevi += 1
+    return prosti_brojevi",4,4,t,,,"Super posao! Usprkos tome što je zadatak relativno jednostavan, ti si ga uspio riješiti u prvom pokušaju. To je veliki početak i pokazuje da si spreman za daljnje izazove u svijetu programiranja!",advance,0.000,0.340,1,119,66,281,,,,f,,2026-07-28 21:05:37.921968+00
+143,4a79d2a0-7056-4e8e-9141-f090a9c431da,langgraph,3,12,29,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pogreška je u tome što si počeo brojanje od 1, a trebaće od 0. Pokušaj ponovo, ali ovaj put počni od 0 i pogledaj kako će ti zvjezdice izgledati.",retry,0.340,0.340,2,475,62,15641,,,,f,,2026-07-28 21:05:38.730136+00
+144,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-07-28 21:05:58.510191+00
+145,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,4,2,"def sign(n):
+    if n > 0:
+        return 'positive'
+    elif n < 0:
+        return 'negative'
+    else:
+        return 'zero'",3,3,t,,,"Sretno! Odlično si riješio zadatak, brzo i precizno! Pozdrav na uspješno završen zadatak!",advance,0.000,0.340,1,114,41,264,,,,f,,2026-07-28 21:05:59.799192+00
+146,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,5,3,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,Hvala ti na uspješno izvedenom zadataku! Odlično si prikazao svoje znanje i sposobnost rješavanja problema.,advance,0.340,0.680,1,118,41,264,,,,f,,2026-07-28 21:05:59.84566+00
+147,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,6,4,"def fizzbuzz_single(n):
+    if n % 3 == 0 and n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)",5,5,t,,,Čestitke! Uspešno ste riješili FizzBuzz zadatak za jedan broj iz prvog pokušaja. To je izuzetan početak u svijetu programiranja.,advance,0.680,1.000,1,117,50,250,,,,f,,2026-07-28 21:06:00.889352+00
+148,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,1,5,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,Hvala ti što si uspješno riješio zadatak! Odlično si pokazao svoje znanje i vještine u programu.,advance,0.000,0.340,1,119,39,218,,,,f,,2026-07-28 21:06:01.641533+00
+149,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,2,6,"def sum_of_range(n):
+    zbir = 0
+    for i in range(1, n + 1):
+        zbir += i
+    return zbir",4,4,t,,,"Molim te, odmah ću ti dati pohvalu! 
+
+Želimo ti čestitke na uspješnom rješenju zadataka! Odlično si se pripremio i izvršio zadatak na prvi pokušaj!",advance,0.340,0.680,1,117,64,328,,,,f,,2026-07-28 21:06:02.228068+00
+150,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,3,7,"def reverse_string_forloop(s):
+    reversed_s = """"
+    for char in s:
+        reversed_s = char + reversed_s
+    return reversed_s",4,4,t,,,"""Super posao! Uspešno si obrnuto string koristeći for petlju - to je veliki korak u svijetu programiranja!""",advance,0.680,1.000,1,120,37,218,,,,f,,2026-07-28 21:06:23.203846+00
+151,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,9,8,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,"Pokusaj da ponovno razmotriš uvjete za odbrojavanje. Neka se n pojavlja kao n > 0, jer se tada ispisuje samo od 1 do n.",retry,0.000,0.000,2,401,55,467,,,,f,,2026-07-28 21:06:23.887726+00
+152,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,9,9,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,"Sjeti se da u odbrojavanju uvijek počinjemo sa brojem koji je jednak 0, a ne 1. Proveri da li si uključio i slučaj kada je n jednak 0.",retry,0.000,0.000,2,401,61,515,,,,f,,2026-07-28 21:06:25.734356+00
+153,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,9,10,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,"Pokušaj da si se osvrnuo na uvjete za koje će se izvršiti odbrojavanje. Znam da si skoro tamo, samo malo dodatnog razmišljanja i trebaćeš da izbaci tu grešku.",easier,0.000,0.000,2,401,69,485,,,,f,,2026-07-28 21:06:46.775265+00
+154,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,10,11,"def digit_sum(n):
+    zbir = 0
+    while n > 0:
+        zbir += n % 10
+        n //= 10
+    return zbir",4,4,t,,,"Hvala ti na brzom rješenju! Odlično si uspio izračunati sumu cifara broja već na prvom pokušaju, što je veliki korak u razvoju vaših matematičkih vještina.",advance,0.000,0.340,1,115,63,280,,,,f,,2026-07-28 21:06:46.800539+00
+155,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,11,12,"def collatz_steps(n):
+    koraci = 0
+    while n != 1:
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = 3 * n + 1
+        koraci += 1
+    return koraci",3,3,t,,,"Sjajno! Oduševljen sam tvojim brzim i tačnim rezultatom. Uspio si izvrsno implementirati Collatz niz i odrediti broj koraka, što je veliki korak naprijed u svijetu programiranja!",advance,0.340,0.680,1,118,67,281,,,,f,,2026-07-28 21:06:47.625895+00
+156,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,7,13,"def multiplication_table(n):
+    table = ''
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            table += str(i * j) + ' '
+        table = table.strip() + '\n'
+    return table.strip()",3,3,t,,,"Hvala ti na brzom rješenju! Odlično si pokazao da si sposoban da riješi ovaj zadatak, a to je samo početak uspješne karijere u svijetu programiranja!",advance,0.000,0.340,1,115,57,313,,,,f,,2026-07-28 21:06:48.439952+00
+157,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,8,14,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    is_prime = [True] * (n + 1)
+    is_prime[0] = is_prime[1] = False
+    for i in range(2, int(n ** 0.5) + 1):
+        if is_prime[i]:
+            for j in range(i * i, n + 1, i):
+                is_prime[j] = False
+    return sum(is_prime)",4,4,t,,,Hvala ti na brzom i ispravnom rješenju! Odlično ste prikazali svoje znanje i brzinu u rješavanju problema.,advance,0.340,0.680,1,119,42,265,,,,f,,2026-07-28 21:06:49.171702+00
+158,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,12,15,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pokusaj ponovo! Sjeti se da range(n) kreće od 0, pa moraš prilagoditi broj zvjezdica u zavisnosti od trenutnog broja petlje. To će te vratiti na pravu stazu ka rješenju!",retry,0.680,0.680,2,475,71,514,,,,f,,2026-07-28 21:07:10.135447+00
+159,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,12,16,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pokusaj ponovo, pa se sjeti da range(n) kreće od 0 do n-1. Misliš da ćeš to jednostavno popraviti, i to će te voditi ka rješenju!",retry,0.680,0.680,2,475,56,436,,,,f,,2026-07-28 21:07:11.741235+00
+160,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,12,17,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Sjeti se da range(n) kreće od 0 do n-1, pa je važno da ispravno računaju broj zvjezdica u svakoj iteraciji. Pokušaj ponovno analizirati logiku i koristiti range(n+1) umjesto range(n) ili ispravno računaj broj zvjezdica u svakoj iteraciji.",easier,0.680,0.680,2,475,97,15718,,,,f,,2026-07-28 21:07:27.815355+00
+161,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,8,18,"def count_primes_upto(n):
+    prosti_brojevi = 0
+    kandidati = list(range(2, n + 1))
+    for i in range(len(kandidati)):
+        for j in range(i + 1, len(kandidati)):
+            if kandidati[j] % kandidati[i] == 0:
+                kandidati.pop(j)
+                j -= 1
+        if kandidati[i] == kandidati[-1]:
+            prosti_brojevi += 1
+    return prosti_brojevi",2,4,f,wrong_inner_range,,"Pokusaj ponovo, ali ovaj puta misli na što se zapravo traži: da se provjerava djeljivost do broja num-1, jer ako je broj num djeljiv sa nekim brojem između 1 i num-1, onda nije prost.",retry,0.680,0.680,2,571,74,484,,,,f,,2026-07-28 21:07:27.821641+00
+162,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,8,19,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,"Žao mi je što si morao proveći toliko pokušaja, ali srećom si uspio rešiti zadatak! Pozdrav i hvala što si nastavio s naporima!",advance,0.680,1.000,1,119,48,296,,,,f,,2026-07-28 21:07:49.781226+00
+163,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,12,20,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pokusaj ponovno razumeš zadatak i misliš na što si zapravo tražio. U slučaju trokuta od zvjezdica, vanjska petlja treba kreći od 0, a unutarnja petlja od 0 do n, gdje je n broj redova trokuta. To će ti pomoći da ispravno računaš broj zvjezdica.",easier,1.000,1.000,2,475,102,592,,,,f,,2026-07-28 21:07:49.786505+00
+164,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,8,21,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    prosti_brojevi = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            prosti_brojevi += 1
+    return prosti_brojevi",4,4,t,,,"Molim te, osvrni se na studentov rad i zapazi kako je uspio riješiti zadatak na 4. pokušaju! To je sjajan rezultat, pa ti želim hvala za trud i zavidim ti njegovu tenaciju i požrtvovanost.",advance,1.000,1.000,1,119,72,344,,,,f,,2026-07-28 21:07:50.773125+00
+165,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,12,22,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pogrešak ti nije nepoznat, ali ovaj put pokušaj da se osvrniš na kod i otkriješ gdje je greška. Pogledaj kako je koristio range(n) i kako je računao broj zvjezdica. To će ti pomognuti da nađeš rješenje.",easier,1.000,1.000,2,475,85,15624,,,,f,,2026-07-28 21:07:51.647749+00
+166,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,8,23,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    prosti_brojevi = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            prosti_brojevi += 1
+    return prosti_brojevi",4,4,t,,,"Sretno si! Uspešno si riješio zadatak o brojanju prostih brojeva do n, što je zahtijevao od tebe puno truda i strpljenja, posebno poslije 4 neuspjelih pokušaja. Ova uspješna rezultacija je rezultat tvoje tvrdnje i želje za učenjem!",advance,1.000,1.000,1,119,97,359,,,,f,,2026-07-28 21:08:07.675687+00
+167,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,12,24,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pokusaj ponovo! Tvoj je korak u pravcu, ali nije potpuno ispravan. Pogledaj kako ćeš broj zvjezdica izračunati i koristiti range(n) za vanjsku petlju, ali s razumnim početkom od 1.",easier,1.000,1.000,2,475,71,15638,,,,f,,2026-07-28 21:08:08.555002+00
+168,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,8,25,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    primes = 0
+    for candidate in range(2, n + 1):
+        is_prime = True
+        for divisor in range(2, int(candidate ** 0.5) + 1):
+            if candidate % divisor == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes += 1
+    return primes",4,4,t,,,"Hvala ti na trudu i odvažnosti! Uspešno ste preko šest pokušaja riješili zadatak o brojanju prostih brojeva do n, što pokazuje vašu sposobnost za naučivanje od straha i poboljšanje kodiranja.",advance,1.000,1.000,1,119,71,281,,,,f,,2026-07-28 21:08:24.552467+00
+169,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,12,26,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pokusaj ponovno razmišliti o tom kako će izračunati broj zvjezdica u svakoj jedinici. Sjeti se da su zvjezdice u prvom redu dvije, u drugom redu tri, u trećem redu četiri itd. To će vam pomoći da ispravite grešku i stvorite pravilan trokut od zvjezdica.",easier,1.000,1.000,2,475,96,547,,,,f,,2026-07-28 21:08:25.291798+00
+170,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,8,27,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,"Sve pohvale studentu! Uspešno ste riješili zadatak brojanje prostih brojeva do n, i to nakon sedmog pokušaja. To je veliki uspjeh!",advance,1.000,1.000,1,119,50,250,,,,f,,2026-07-28 21:08:26.151473+00
+171,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,12,28,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pokusaj ponovo! Sjeti se da je range(n) uključuje 0, što znači da će se broj zvjezdica početi računati od 0, a ne od 1. Možda je vrijeme da ponovno pregledaš logiku i ispraviš grešku!",easier,1.000,1.000,2,475,80,469,,,,f,,2026-07-28 21:08:46.969493+00
+172,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,8,29,"def count_primes_upto(n):
+    broj_prostih = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            broj_prostih += 1
+    return broj_prostih",4,4,t,,,"Hvala ti na trudu i odredjenoj želji za učenjem! Uspešno rešavanje ovog zadataka, čak i nakon nekoliko pokušaja, pokazuje da si odan i tvrdoglav student.",advance,1.000,1.000,1,119,61,265,,,,f,,2026-07-28 21:08:47.79112+00
+173,e301e2b7-2d41-4c5f-aee2-9e0ec6973511,llamaindex,1,12,30,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Pokusaj ponovo razmišljati o svom kodu. Sjeti se da range(n) kreće od 0, pa misli na to kako bi mogao iskoristiti taj činjenicu da napraviši ispravnu vanjsku petlju. Kako bi ti pomogao, možda bi trebalo razmotriti kako ćeš odrediti broj zvjezdica u svakoj vrsti.",easier,1.000,1.000,2,475,103,15765,,,,f,,2026-07-28 21:08:48.582204+00
+174,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-07-28 21:09:04.805032+00
+175,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,4,2,"def sign(n):
+    if n > 0:
+        return 'positive'
+    elif n < 0:
+        return 'negative'
+    else:
+        return 'zero'",3,3,t,,,"Hvala ti što si uspio riješiti zadatak iz prvog pokušaja! To je veliki uspjeh, i srećno nastavljamo dalje.",advance,0.000,0.340,1,114,42,265,,,,f,,2026-07-28 21:09:05.349101+00
+176,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,5,3,"def grade(score):
+    if score > 90:
+        return 'A'
+    elif score > 80:
+        return 'B'
+    elif score > 79:
+        return 'B'
+    elif score > 70:
+        return 'C'
+    elif score > 69:
+        return 'C'
+    elif score > 60:
+        return 'D'
+    elif score > 59:
+        return 'D'
+    elif score > 0:
+        return 'F'
+    else:
+        return 'F'",6,7,f,wrong_boundary_operator,wrong_boundary_operator,"Pogreška koju si napravio je vrlo česta, ali ne mora biti definitivna. Pokušaj da ponovno razmotriš granice za ocjenu i provjeriš da li je koristio >= umjesto >. To će vjerojatno donijeti ispravnu ocjenu.",retry,0.340,0.340,2,507,83,15671,,,,f,,2026-07-28 21:09:05.355674+00
+177,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,5,4,"def grade(score):
+    if score >= 60:
+        return 'D'
+    elif score >= 70:
+        return 'C'
+    elif score >= 80:
+        return 'B'
+    elif score >= 90:
+        return 'A'
+    else:
+        return 'F'
+",2,7,f,wrong_boundary_operator,unordered_conditions,"Ne brini se, to je normalno dio učenja! Kada se suočiš sa greškom, to je prilika da istražiš i poboljšaš svoj kod. Pogledaj što se događa kad koristiš > umjesto >= i pokušaj ispraviti taj dio. Svakako će ti to donijeti bolji rezultat!",retry,0.340,0.340,2,459,96,15719,,,,f,,2026-07-28 21:09:39.72236+00
+178,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,5,5,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,"Hvala ti što si uspješno završio zadatak! Sretno što si uspio na 3. pokušaju, to je znak da si dovoljno tvrdoglavan i strastven da bi došao do cilja!",advance,0.340,0.680,1,118,61,281,,,,f,,2026-07-28 21:09:40.486745+00
+179,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,6,6,"def fizzbuzz_single(n):
+    if n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    elif n % 3 == 0 and n % 5 == 0:
+        return 'FizzBuzz'
+    else:
+        return str(n)
+",3,5,f,wrong_condition_order,wrong_condition_order,Pogreška je u redu! To je jedan od najčešćih grešaka kod FizzBuzz-a. Pokušaj razmišljati o tome: što bi se desilo ako bi broj bio 15? Da li bi trebao ispisati samo 'Fizz' ili nešto drugo? To će ti pomoći da razumiješ poretkom provjere uslova.,retry,0.680,0.680,2,470,96,545,,,,f,,2026-07-28 21:09:40.49182+00
+180,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,6,7,"def fizzbuzz_single(n):
+    if n % 3 == 0 or n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)
+",3,5,f,wrong_condition_order,wrong_logical_operator,"""Pausti malo i razmišlaj o tome što si uradio. Provjeri da li si ispravno provjeravao djeljivost broja s oba broja (3 i 15) prije nego što vrati rezultat. To će ti pomoći da dođeš do pravog rješenja!""",retry,0.680,0.680,2,470,85,15592,,,,f,,2026-07-28 21:10:19.999037+00
+181,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,6,8,"def fizzbuzz_single(n):
+    if n % 3 == 0 and n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)",5,5,t,,,"Srećan si! Uspio si rešenjem FizzBuzz problema na treći pokušaj, što je veoma dobar rezultat! Ovo je pravi početak za daljnje izazove u svijetu programiranja.",advance,0.680,1.000,1,117,57,297,,,,f,,2026-07-28 21:10:20.783375+00
+182,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,1,9,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,"Bravo, studentu! Uspešno ste riješili zadatak iz prvog pokušaja, što je znak vaše snage i odgovornosti. Ovo je samo početak uspješne karijere u svijetu programiranja!",advance,0.000,0.340,1,119,62,281,,,,f,,2026-07-28 21:10:20.789945+00
+183,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,2,10,"def sum_of_range(n):
+    suma = 0
+    for i in range(1, n):
+        suma += i
+    return suma",1,4,f,off_by_one_range,off_by_one_range,"Pokusaj ponovo, ali ovaj put pazi na granice ranga. Kada koristiš range(1, n), zaboravi da si počeo od 1, a završio prije n.",retry,0.340,0.340,2,480,55,453,,,,f,,2026-07-28 21:10:21.472878+00
+200,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,12,27,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,extra_space_added,"Nadam se da ćeš uspjeti da ispraviš grešku! Sjeti se da range(n) kreće od 0, pa moraš prilagoditi računanje broja zvjezdica po redu tako da uzme u obzir taj detalj.",easier,0.680,0.680,2,475,69,547,,,,f,,2026-07-28 21:12:57.422168+00
+184,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,2,11,"def sum_of_range(n):
+    total = 0  # inicijalizacija varijable izvan petlje
+    for i in range(1, n+1):
+        total = i  # ovo nije ispravno, treba da se dodaje, a ne zamjenjuje
+    return total",2,4,f,accumulator_not_reset,accumulator_not_reset,"Ne brini se, to je normalan korak u učenju! Pogledaj opet na zadatak i pokušaj razumjeti što se događa. Provjeri da li je total inicijaliziran prije petlje, a ne unutar nje. To će te vratiti na pravu stazu ka rješenju!",retry,0.340,0.340,2,527,89,563,,,,f,,2026-07-28 21:10:44.160062+00
+185,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,2,12,"def sum_of_range(n):
+    zbir = 0
+    for i in range(1, n + 1):
+        zbir += i
+    return zbir",4,4,t,,,Sretno si uspio riješiti zadatak! Odlična radna moralnost i vještina za pokušaje.,advance,0.340,0.680,1,117,34,250,,,,f,,2026-07-28 21:10:44.833956+00
+186,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,3,13,"def reverse_string_forloop(s):
+    n = len(s)
+    for i in range(n-1, -1, -1):
+        print(s[i], end='')
+    return s",2,4,f,wrong_concatenation_order,wrong_concatenation_order,"Ne brini se, sve će biti u redu! Sjedi mirno i razmisli o tome što si radio do sada. Možda si samo zapravo blizu rješenju, ali samo trebaš malo promijeniti planiranje u izvršavanje. Pokušaj ponovno razmišljati o tome kako ćeš obrnuti string, a onda ćeš vidjeti da ćeš dobiti isti string.",retry,0.680,0.680,2,424,113,561,,,,f,,2026-07-28 21:10:44.840144+00
+187,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,3,14,"def reverse_string_forloop(s):
+    reversed_s = """"
+    for char in s:
+        reversed_s = char + reversed_s
+    return reversed_s",4,4,t,,,"""Super posao! Uspešno si obrnuto string pomoću for petlje, što je zaista dobar rezultat!""",advance,0.680,1.000,1,120,34,234,,,,f,,2026-07-28 21:11:07.346052+00
+188,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,9,15,"def countdown(n):
+    brojac = n
+    while brojac >= 1:
+        print(brojac)
+        brojac += -1",0,3,f,missing_decrement,missing_decrement,"Pogreška je očekivana! Sada je vrijeme da si osjetiš što si napravio pogrešku i da je napraviš bolje. Pokušaj ponovno razmišljati o svom kodu i vidjeti gdje se događa beskonačna petlja. Kroz proces razmišljanja, sigurno ćeš dobiti pogled na što trebaš popraviti.",retry,0.000,0.000,2,415,107,544,,,,f,,2026-07-28 21:11:07.351197+00
+189,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,9,16,"def countdown(n):
+    i = n
+    while i >= 0:
+        print(i)
+        i -= 1",0,3,f,off_by_one_condition,off_by_one_condition,"Pokusaj ponovno razmišljati o uvjetu n > 0. Zašto se točno mora ispisati ""Nije nula"" tek kad se n nije ispravno odbrojalo do 0?",retry,0.000,0.000,2,406,60,499,,,,f,,2026-07-28 21:11:29.472876+00
+190,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,9,17,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,"Pokusaj ponovo! Nisi tako daleko od rješenja. Pomoći će ti da razmisliš o uvjetima u loopu. Kada koristiš n >= 0, to će se primijeniti i za slučaj kada je n 0, što nije željeno u ovom zadataku.",easier,0.000,0.000,2,401,81,515,,,,f,,2026-07-28 21:11:30.33428+00
+191,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,10,18,"def digit_sum(n):
+    zbir = 0
+    while n > 0:
+        zbir += n % 10
+        n //= 10
+    return zbir",4,4,t,,,Hvala ti što si uspješno riješio zadatak! Odlična radna vještina i brza priroda!,advance,0.000,0.340,1,115,35,218,,,,f,,2026-07-28 21:11:30.339333+00
+192,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,11,19,"def collatz_steps(n):
+    koraci = 0
+    while n > 1:
+        koraci += 1
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = (n * 3) + 1
+        if n == 1 and koraci > 0:
+            return koraci + 1
+    return 0",1,3,f,wrong_termination_condition,wrong_termination_condition,"Pokusaj ponovno razmišljati o tome kako brojiš korake. Za svaki korak koji se izvrši, moraš dodati 1 u brojaču koraka, ali ne i kad se broj smanji na 1. Zatim, zašto onda koristi while n > 1 i ne while n >= 1?",retry,0.340,0.340,2,512,90,594,,,,f,,2026-07-28 21:11:31.00031+00
+193,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,11,20,"def collatz_steps(n):
+    koraci = 0
+    while n != 1:
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = 3 * n + 1
+        koraci += 1
+    return koraci",3,3,t,,,"Hvala ti na trudima! Odlično si riješio zadatak iz 2. pokušaja, a Collatz niz se pokazao kao izazov koji si uspio savladati.",advance,0.340,0.680,1,118,50,234,,,,f,,2026-07-28 21:11:53.313271+00
+194,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,7,21,"def multiplication_table(n):
+    for i in range(n):
+        for j in range(n):
+            print(i * (j + 1), end=' ')
+        print()",0,3,f,swapped_loop_variables,off_by_one_inner_loop,"Ne brini se, sve će biti u redu! Pokušaj ponovo razmišljati o tome kako se dobiva tablica množenja. Sjeti se da je u tablici množenja redovi povezani s brojem u stupcu, a stupci s brojem u redu. To će te vratiti na pravu stazu ka rješenju!",retry,0.000,0.000,2,424,95,562,,,,f,,2026-07-28 21:11:53.31944+00
+195,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,7,22,"def multiplication_table(n):
+    table = ''
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            table += str(i * j) + ' '
+        table = table.strip() + '\n'
+    return table.strip()",3,3,t,,,"Hvala ti što si uspio riješiti zadatak o tablici množenja! Ovdje je vaša zasnivačka ideja dobro primijenjena, što je pokazuje vašu sposobnost da se nosite s izazovima u svijetu programiranja.",advance,0.000,0.340,1,115,73,266,,,,f,,2026-07-28 21:12:15.660747+00
+196,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,8,23,"def count_primes_upto(n):
+    count = 0
+    for i in range(1, n + 1):
+        for j in range(1, i):
+            if i % j == 0:
+                break
+        else:
+            count += 1
+    return count",1,4,f,wrong_inner_range,one_counted_as_prime,"Nemoj se brinuti, sve je u redu! Sjeliš jedan korak unatrag, ali to je prilika da iskoristiš tu priliku da učiniš napredak. Pogledaj što se događa kada provjeravate djeljivost do num-1, a ne do num, i vjerojatno ćeš dobiti ispravnu rješenja.",retry,0.340,0.340,2,513,104,15734,,,,f,,2026-07-28 21:12:15.665738+00
+197,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,8,24,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    primes = 0
+    for candidate in range(2, n + 1):
+        is_prime = True
+        for divisor in range(2, int(candidate ** 0.5) + 1):
+            if candidate % divisor == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes += 1
+    return primes",4,4,t,,,"Oduševljava me što si uspio rešiti zadatak brojanja prostih brojeva do 'n' već na drugom pokušaju! To je veliki korak naprijed u svom programiranju, i sigurno ćeš nastaviti da teško napreduješ u svom putu!",advance,0.340,0.680,1,119,79,1405,,,,f,,2026-07-28 21:12:34.188556+00
+198,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,12,25,"def star_triangle(n):
+    for i in range(1, n+1):
+        for j in range(1, i+1):
+            print(""*"", end="""")
+        print()",0,3,f,,off_by_one_star_count,"Nemoj da se briniš o pogreškama, nego da probaš razumjeti što nije dobro i kako bi se moglo popraviti. Pogledaj ponovno na zadatak i pokušaj odrediti što je moguće uzrok problema.",retry,0.680,0.680,2,453,69,561,,,,f,,2026-07-28 21:12:34.199611+00
+199,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,12,26,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Zboglađaj, nemoj se brinuti! To je normalan korak u učenju. Kada koristiš range(n), zapamti da će početi od 0, ne od 1. Provjeri svoj kôd i pokušaj ponovno.",retry,0.680,0.680,2,475,72,500,,,,f,,2026-07-28 21:12:56.361236+00
+201,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,8,28,"def count_primes_upto(n):
+    is_prime = True
+    count = 0
+    for i in range(2, n + 1):
+        if is_prime:
+            for j in range(2, i):
+                if i % j == 0:
+                    is_prime = False
+                    break
+            if is_prime:
+                count += 1
+    return count",2,4,f,flag_not_reset,flag_not_reset,"Pomisli na to kao na čišćenje tabla prije svakog novog koraka. Kao i kod tabla, moramo resetirati vrijednosti prije svakog novog koraka, u ovom slučaju is_prime na True. Time ćete osigurati tačno brojanje prostih brojeva.",easier,0.680,0.680,2,521,84,546,,,,f,,2026-07-28 21:12:57.428866+00
+202,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,7,29,"def multiplication_table(n):
+    result = """"
+    for i in range(n):
+        for j in range(n):
+            result += str((i + 1) * (j + 1)) + "" ""
+        result += ""\n""
+    return result",1,3,f,swapped_loop_variables,off_by_one_inner_loop,Pogreška je u tome što si zamijenio redove i stupce. Pokušaj ponovo razmotriti tablicu množenja i upazi kako se brojevi množe u pravilnom redoslijedu.,easier,0.680,0.680,2,442,62,15626,,,,f,,2026-07-28 21:13:20.027386+00
+203,5295d093-32e4-4931-91ec-ca806f01cd0e,llamaindex,2,8,30,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(1, n+1):
+        for j in range(1, int(i**0.5) + 1):
+            if i % j == 0:
+                break
+        else:
+            brojac += 1
+    return brojac",1,4,f,wrong_inner_range,one_counted_as_prime,"Ne brini se, sve će biti u redu! Zaboravi samo na činjenicu da treba provjeravati djeljivost do broja num-1, a ne do num samog. To će ti omogućiti da ispravo brojiši prosti brojeve do n.",easier,0.680,0.680,2,524,75,15670,,,,f,,2026-07-28 21:13:36.628767+00
+204,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-07-28 21:13:53.482164+00
+205,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,4,3,"def sign(n):
+    if n > 0:
+        return 'positive'
+    if n < 0:
+        return 'negative'",2,3,f,missing_zero_case,missing_zero_case,"Nemoj se brinuti, sve će biti u redu! Pogledajte još jednom uvjete u vašem if-u i pokušajte dodati elif klauzulu da bi se izbjegao pogrešan slučaj.",retry,0.000,0.000,2,407,65,15641,,,,f,,2026-07-28 21:14:10.715263+00
+206,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,4,4,"def sign(n):
+    if n >= 0:
+        return 'positive'
+    elif n < 0:
+        return 'negative'
+    else:
+        return 'zero'",2,3,f,wrong_comparison_operator,wrong_comparison_operator,Pogreška je u tome što nisi ispravno koristio operator za provjeru da li je broj pozitivan. Pokušaj ponovno razmišljati o tome kako ćeš to učiniti.,easier,0.000,0.000,2,404,55,406,,,,f,,2026-07-28 21:14:12.109624+00
+207,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,5,5,"def grade(score):
+    if score > 90:
+        return 'A'
+    elif score > 80:
+        return 'B'
+    elif score > 70:
+        return 'C'
+    elif score > 60:
+        return 'D'
+    elif score > 0:
+        return 'F'
+    else:
+        return 'F'",5,7,f,wrong_boundary_operator,unordered_conditions,"Pokusaj ponovo, ali ovaj put s posebnom pozornosću na detalje. Pogreške kao što je koristiti > umjesto >= mogu značajno utjecati na rezultat. Provjeri sve moguće slučajeve i granice.",retry,0.000,0.000,2,471,72,435,,,,f,,2026-07-28 21:14:12.117824+00
+208,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,5,6,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,Hvala ti što si uspješno riješio zadatak! Očito si uložio dovoljno truda da bi ga uspješno završio na drugom pokušaju.,advance,0.000,0.340,1,118,50,235,,,,f,,2026-07-28 21:14:35.029895+00
+209,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,6,7,"def fizzbuzz_single(n):
+    if n % 3 == 0 or n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)
+",3,5,f,wrong_condition_order,wrong_logical_operator,Pogreška je u redu! To je samo dio procesa učenja. Zahtijevajte od sebe da nastavite dalje i provjerite kombinaciju uslova. Kako će se ponašati kada se broj dijeli i s 3 i s 5?,retry,0.340,0.340,2,470,71,467,,,,f,,2026-07-28 21:14:35.035421+00
+210,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,6,8,"def fizzbuzz_single(n):
+    if n % 3 == 0 and n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)",5,5,t,,,Sretno! Ovo je pravi početak u programiranju! Ti si učinio veliki korak naprijed i uspio riješiti zadatak FizzBuzz za jedan broj već na drugom pokušaju. To je znak da si sposoban i da ćeš uspjeti u budućim izazovima.,advance,0.340,0.680,1,117,85,343,,,,f,,2026-07-28 21:14:58.293178+00
+211,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,1,12,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n+1))",3,3,t,,,"Hvala ti na trudu i izdržljivosti! Uspješno ste riješili zadatak iz 4. pokušaja, što je odlična učinka.",advance,0.000,0.340,1,119,44,250,,,,f,,2026-07-28 21:14:58.298357+00
+212,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,2,13,"def sum_of_range(n):
+    zbir = 0
+    for i in range(1, n + 1):
+        zbir += i
+    return zbir",4,4,t,,,"Hvala na brzom rješenju! Odlično si uspio izračunati sumu raspona brojeva već na prvom pokušaju, što pokazuje tvoju brzinu i preciznost u rješavanju zadataka.",advance,0.340,0.680,1,117,64,281,,,,f,,2026-07-28 21:15:19.716609+00
+213,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,3,14,"def reverse_string_forloop(s):
+    reversed_s = """"
+    for char in s:
+        reversed_s = char + reversed_s
+    return reversed_s",4,4,t,,,Hvala za uspješno riješeni zadatak! Odlično si koristio for petlju za obrtanje stringa.,advance,0.680,1.000,1,120,35,250,,,,f,,2026-07-28 21:15:20.356676+00
+214,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,9,15,"def countdown(n):
+    while n >= 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,off_by_one_condition,"Pokusaj obnoviti korake ili provjeriti uvjete u programu. U odbrojaču, uvjet za početni broj bi trebao biti n > 0, jer nije potrebno ispisati 0.",retry,0.000,0.000,2,401,59,467,,,,f,,2026-07-28 21:15:20.915945+00
+215,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,9,16,"def countdown(n):
+    i = n
+    while i >= 1:
+        print(i)
+        i -= 1",0,3,f,off_by_one_condition,missing_decrement,"Pokusaj ponovo razmišljati o uvjetima u zadanju. Sjeti se da se odbrojavanje obično odvija od 10 ili 9 nizvodno, a ne od 0. Kao što si rekao, koristiti n > 0 umjesto n >= 0 može izazvati dodatno ispisivanje 0 na kraju. Pokušaj ponovo razmišljati o tome kako ispravno implementirati odbrojavanje.",retry,0.000,0.000,2,406,124,561,,,,f,,2026-07-28 21:15:42.936177+00
+216,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,9,17,"def countdown(n):
+    while n >= 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,off_by_one_condition,"Ne brini, sve će biti u redu! Sjeti se da se odbrojavanje obično počinje sa zadnjim brojem, pa ne mora uvijek biti n > 0. Pokušaj da razumiješ zašto se odbrojavanje često počinje sa zadnjeg broja, a ne s nule. To će ti pomoći da dođeš do ispravnog rješenja!",easier,0.000,0.000,2,401,112,577,,,,f,,2026-07-28 21:15:43.967838+00
+217,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,10,18,,,,,,,,,,,0,0,0,0,,,,t,"HTTPConnectionPool(host='localhost', port=8090): Read timed out. (read timeout=15)",2026-07-28 21:15:43.975739+00
+218,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,10,20,"def digit_sum(n):
+    suma = 0
+    while n != 0:
+        suma += n % 10
+        n //= 10
+    # tu nije n
+    while n != 0:
+        suma += n % 10
+        n //= 10",0,4,f,missing_update_infinite_loop,missing_update_infinite_loop,"Pokusaj ponovo i obratite pažnju na petlju, sigurno ćeš uspjeti! Ako se petlja otkida, možda je došlo do beskonačne petlje zbog zaboravljene promjene vrijednosti n.",easier,0.000,0.000,2,502,73,499,,,,f,,2026-07-28 21:16:23.273202+00
+219,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,9,21,"def countdown(n):
+    while n > 0:
+        print(n)
+        n = n - 1",0,3,f,off_by_one_condition,missing_decrement,"Ne brini se, to je normalan dio učenja! Sve što moraš učiniti je malo pažljivije razmišljanje o uvjetima za odbrojavanje. Pokušaj ponovno razmotriti uvjete i sjeti se što se događa kada je n jednak nuli.",easier,0.000,0.000,2,403,87,578,,,,f,,2026-07-28 21:16:23.282856+00
+220,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,10,22,,,,,,,,,,,0,0,0,0,,,,t,"HTTPConnectionPool(host='localhost', port=8090): Read timed out. (read timeout=15)",2026-07-28 21:16:24.731686+00
+221,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,10,23,"def digit_sum(n):
+    zbir = 0
+    while n > 0:
+        zbir += n % 10
+        n //= 10
+    return zbir",4,4,t,,,"Hvala ti što si uspio riješiti zadatak! Uspeh je učinjen nakon 5 pokušaja, što pokazuje da si seborio i ostao uvjeren u sebe.",advance,0.000,0.340,1,115,50,265,,,,f,,2026-07-28 21:16:42.730952+00
+222,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,11,24,"def collatz_steps(n):
+    koraci = 0
+    while n != 1:
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = 3 * n + 1
+        koraci += 1
+    return koraci",3,3,t,,,Želimo vam srčanu pohvalu! Uspeh u rješavanju zadataka Collatz niz - broj koraka iz prve pokušaje dokazuje vašu sposobnost brze i precizne rješavanja problema u programu.,advance,0.340,0.680,1,118,64,327,,,,f,,2026-07-28 21:16:42.740079+00
+223,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,7,25,"def multiplication_table(n):
+    result = ''
+    for i in range(1, n+1):
+        for j in range(1, n+1):
+            result += str(i * j) + ' '
+        result += '\n'
+    return result",1,3,f,swapped_loop_variables,swapped_loop_variables,"Ne brini se, sve će biti u redu! Pročitaj ponovno zadatke i pokušaj razumjeti što se događa u jednom od koraka. Pazi na položaj indeksa i kako se koriste u računu.",retry,0.000,0.000,2,443,67,515,,,,f,,2026-07-28 21:16:43.710474+00
+224,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,7,27,"def multiplication_table(n):
+    table = """"
+    for i in range(1, n+1):
+        for j in range(1, n+1):
+            table += str(i * j) + "" ""
+        table += ""\n""
+    return table",1,3,f,swapped_loop_variables,off_by_one_inner_loop,"Pokusaj ponovo pogledati tablicu množenja i razmišlaj o tome što se događa kada množi broj u prvoj koloni s brojem u prvoj redcu. U tablici množenja, prvi redac je 0 puta svaki broj, što rezultira 0. Ali ako zamijenis i i j, dobiješ 0 puta svaki broj, što je pogrešan rezultat.",easier,0.000,0.000,2,443,115,639,,,,f,,2026-07-28 21:17:08.704478+00
+225,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,8,28,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,"Hvala ti što si uspio riješiti zadatak brzo i efikasno! Ti si pravi programski talent, i sigurno ćeš postići mnogo uspjeha u svom putu učenja!",advance,0.000,0.340,1,119,55,265,,,,f,,2026-07-28 21:17:08.714567+00
+226,a4403e60-1e2e-42ce-af7f-47ade5f89e94,llamaindex,3,12,29,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,outer_range_wrong,,"Nema brige! Sve što trebaš učiniti je koristiti range(n+1) umjesto range(n) kako bi osigurao da broj zvjezdica bude ispravan. Tako ćeš imati n+1 reda, a u svakom redu ćeš imati n zvjezdice.",retry,0.340,0.340,2,475,78,513,,,,f,,2026-07-28 21:17:09.958433+00
+821,0af26db2-1f9a-4ebb-adb1-29f40ce4ffae,langgraph,1,5,4,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,Čestitamo! Odlično ste riješili zadatak na prvom pokušaju. Bravo!,advance,0.340,0.680,1,146,113,639,,,,f,,2026-08-26 19:19:39.980247+00
+822,0af26db2-1f9a-4ebb-adb1-29f40ce4ffae,langgraph,1,6,5,"def fizzbuzz_single(n):
+    if n % 15 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)",5,5,t,,,"",advance,0.680,1.000,1,145,150,360,,,,f,,2026-08-26 19:19:49.247579+00
+823,0af26db2-1f9a-4ebb-adb1-29f40ce4ffae,langgraph,1,1,6,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",2,3,f,,,"Dobro, pokušaj ponovo pregledati uvjete i logiku petlje – možda si previdio neki korak ili uvjet. Fokusiraj se na korak po korak provjeru i bit ćeš na pravom putu!",retry,0.000,0.000,2,467,161,922,,,,f,,2026-08-26 19:19:54.735225+00
+824,0af26db2-1f9a-4ebb-adb1-29f40ce4ffae,langgraph,1,1,7,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,Sjajno! Čestitamo na uspjehu – drago nam je da si riješio zadatak na drugom pokušaju. Keep up the good work!,advance,0.000,0.340,1,148,145,452,,,,f,,2026-08-26 19:20:14.28462+00
+825,0af26db2-1f9a-4ebb-adb1-29f40ce4ffae,langgraph,1,2,8,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total",4,4,t,,,"",advance,0.340,0.680,1,145,150,485,,,,f,,2026-08-26 19:20:14.296365+00
+826,0af26db2-1f9a-4ebb-adb1-29f40ce4ffae,langgraph,1,3,9,"def reverse_string_forloop(s):
+    result = """"
+    for char in s:
+        result = char + result
+    return result",4,4,t,,,Sjajno! Uspjeli ste obrnuti string na prvi pokušaj. Odlično,advance,0.680,1.000,1,147,150,405,,,,f,,2026-08-26 19:20:17.773824+00
+827,0af26db2-1f9a-4ebb-adb1-29f40ce4ffae,langgraph,1,9,10,"def countdown(n):
+    res = []
+    while n > 0:
+        res.append(str(n))
+        n -= 1
+    return ""\n"".join(res)",3,3,t,,,Čestitamo! Uspio si riješiti zadatak već iz prvog pokušaja.,advance,0.000,0.340,1,143,146,452,,,,f,,2026-08-26 19:20:20.749713+00
+828,0af26db2-1f9a-4ebb-adb1-29f40ce4ffae,langgraph,1,10,11,"def digit_sum(n):
+    total = 0
+    while n > 0:
+        total += n % 10
+        n //= 10
+    return total
+
+# Example usage:
+# print(digit_sum(12345))  # Output: 15",4,4,t,,,"",advance,0.340,0.680,1,145,150,594,,,,f,,2026-08-26 19:20:23.307408+00
+829,0af26db2-1f9a-4ebb-adb1-29f40ce4ffae,langgraph,1,11,12,"def collatz_steps(n):
+    steps = 0
+    while n != 1:
+        if n % 2 == 0:
+            n //= 2
+        else:
+            n = 3 * n + 1
+        steps += 1
+    return steps",3,3,t,,,Sjajno! Uspješno ste riješili zadatak na prvi pokušaj. Čestitamo na brzom i tačnom rješenju!,advance,0.680,1.000,1,146,121,905,,,,f,,2026-08-26 19:20:25.948535+00
+830,0af26db2-1f9a-4ebb-adb1-29f40ce4ffae,langgraph,1,7,13,"def multiplication_table(n):
+    rows = []
+    for i in range(1, n + 1):
+        row = []
+        for j in range(1, n + 1):
+            row.append(str(i * j))
+        rows.append(' '.join(row))
+    return '\n'.join(rows)",3,3,t,,,"",advance,0.000,0.340,1,144,150,672,,,,f,,2026-08-26 19:20:29.37095+00
+831,0af26db2-1f9a-4ebb-adb1-29f40ce4ffae,langgraph,1,8,14,"def count_primes_upto(n):
+    count = 0
+    for candidate in range(2, n + 1):
+        is_prime = True
+        for divisor in range(2, candidate):
+            if candidate % divisor == 0:
+                is_prime = False
+                break
+        if is_prime:
+            count += 1
+    return count",4,4,t,,,"",advance,0.340,0.680,1,147,150,547,,,,f,,2026-08-26 19:20:32.528338+00
+832,0af26db2-1f9a-4ebb-adb1-29f40ce4ffae,langgraph,1,12,15,"def star_triangle(n):
+    result = """"
+    for i in range(1, n + 1):
+        line = """"
+        for j in range(i):
+            if j < i:
+                line += ""*""
+        result += line
+        if i != n:
+            result += ""\n""
+    return result
+
+# Test
+if __name__ == ""__main__"":
+    print(star_triangle(5))",3,3,t,,,Sjajno! Odlično si riješio zadatak već na prvom pokušaju. Nastavi tako!,complete,0.680,1.000,1,147,110,500,,,,f,,2026-08-26 19:20:37.289704+00
+833,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-08-26 19:20:40.213622+00
+834,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,4,2,"def sign(n):
+    if n > 0:
+        return 'positive'
+    elif n < 0:
+        return 'negative'
+    else:
+        return 'zero'",3,3,t,,,Sjajno! Čestitamo na brzom rješavanju zadatka na prvi pokušaj. Odlično ste se snašli!,advance,0.000,0.340,1,144,120,358,,,,f,,2026-08-26 19:20:42.64122+00
+835,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,5,3,"",0,7,f,,wrong_boundary_operator,"",retry,0.340,0.340,2,424,180,967,,,,f,,2026-08-26 19:20:42.651695+00
+836,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,5,4,"",0,7,f,,unordered_conditions,"Dobro si krenuo, ali provjeri još jednom uvjete za svaku ocjenu – vjerojatno si pogriješio u granicama bodova. Pokušaj ponovno i vidjet ćeš gdje je potrebno prilagoditi logiku.",retry,0.340,0.340,2,424,154,764,,,,f,,2026-08-26 19:21:02.725623+00
+837,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,5,5,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,Čestitamo na uspjehu!,advance,0.340,0.680,1,146,150,516,,,,f,,2026-08-26 19:21:08.551123+00
+838,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,6,6,"",0,5,f,,wrong_condition_order,"",retry,0.680,0.680,2,411,180,858,,,,f,,2026-08-26 19:21:08.561873+00
+839,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,6,7,"def fizzbuzz_single(n):
+    # Student's attempt with typical mistake (using 'or' instead of 'and')
+    if n % 3 == 0 or n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)",3,5,f,,wrong_logical_operator,"",retry,0.680,0.680,2,497,180,1172,,,,f,,2026-08-26 19:21:24.604084+00
+840,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,6,8,"def fizzbuzz_single(n):
+    if n % 15 == 0:
+        return 'FizzBuzz'
+    if n % 3 == 0:
+        return 'Fizz'
+    if n % 5 == 0:
+        return 'Buzz'
+    return str(n)",5,5,t,,,"",advance,0.680,1.000,1,145,150,452,,,,f,,2026-08-26 19:21:28.21469+00
+841,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,1,9,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,"Sjajno! Uspio si na prvi pokušaj, čestitamo! Bravo!",advance,0.000,0.340,1,148,111,407,,,,f,,2026-08-26 19:21:28.257228+00
+842,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,2,10,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n):
+        total += i
+    return total",1,4,f,,off_by_one_range,"",retry,0.340,0.340,2,493,180,891,,,,f,,2026-08-26 19:21:31.286017+00
+843,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,2,11,"def sum_of_range(n):
+    for i in range(1, n + 1):
+        total = 0
+        total += i
+    return total",1,4,f,,accumulator_not_reset,Ne odustaj – još,retry,0.340,0.340,2,496,180,966,,,,f,,2026-08-26 19:21:58.599637+00
+844,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,2,12,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total",4,4,t,,,Čestitamo! Sjajno si riješio zadatak u trećem pokušaju. Bravo!,advance,0.340,0.680,1,145,114,452,,,,f,,2026-08-26 19:22:02.26714+00
+845,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,3,13,"def reverse_string_forloop(s):
+    result = """"
+    for char in s:
+        result += char
+    return result",2,4,f,,wrong_concatenation_order,"",retry,0.680,0.680,2,437,180,829,,,,f,,2026-08-26 19:22:02.27783+00
+846,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,3,14,,,,,,,,,,,0,0,0,0,,,,t,Groq API i dalje vraća 429 nakon svih pokušaja.,2026-08-26 19:27:09.325909+00
+847,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,3,15,"def reverse_string_forloop(s):
+    rev = """"
+    for c in s:
+        rev = rev + c  # student mistakenly appends instead of prepending
+    return rev",2,4,f,,wrong_concatenation_order,"",easier,0.680,0.680,2,449,180,151374,,,,f,,2026-08-26 19:29:58.189879+00
+848,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,2,16,,,,,,,,,,,0,0,0,0,,,,t,Groq API i dalje vraća 429 nakon svih pokušaja.,2026-08-26 19:29:58.197415+00
+849,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,2,17,"def sum_of_range(n):
+    for i in range(1, n+1):
+        total = 0
+        total += i
+    return total",1,4,f,,accumulator_not_reset,"",easier,0.680,0.680,2,495,180,302372,,,,f,,2026-08-26 19:40:22.029395+00
+850,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,1,18,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,Sjajno! Uspešno si riješio zadatak na drugom pokušaju. Nastavi tako!,advance,0.680,1.000,1,148,111,90969,,,,f,,2026-08-26 19:40:22.036878+00
+851,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,2,19,,,,,,,,,,,0,0,0,0,,,,t,Groq API i dalje vraća 429 nakon svih pokušaja.,2026-08-26 19:45:18.237783+00
+852,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,2,20,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n):
+        total += i
+    return total",1,4,f,,off_by_one_range,"",easier,1.000,1.000,2,493,180,906,,,,f,,2026-08-26 19:57:58.426428+00
+853,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,1,21,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,"Sjajno! Čestitamo na uspjehu – uspio si na trećem pokušaju, odličan rad!",advance,1.000,1.000,1,148,138,90969,,,,f,,2026-08-26 19:57:58.435556+00
+854,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,2,22,,,,,,,,,,,0,0,0,0,,,,t,Groq API i dalje vraća 429 nakon svih pokušaja.,2026-08-26 20:01:33.694377+00
+855,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,2,23,"",0,4,f,,zero_edge_case_error,Pokušaj još jednom paž,easier,1.000,1.000,2,462,180,242079,,,,f,,2026-08-26 20:11:42.84335+00
+856,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,1,24,,,,,,,,,,,0,0,0,0,,,,t,Groq API i dalje vraća 429 nakon svih pokušaja.,2026-08-26 20:11:42.856256+00
+857,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,1,25,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",2,3,f,,,"Ne brini, greške su normalan dio učenja. Pokušaj ponovno razmotriti svaki korak i provjeri da li si pravilno generirao niz od 1 do n. Srećno!",easier,1.000,1.000,2,467,135,302016,,,,f,,2026-08-26 20:22:54.172977+00
+858,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,2,26,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n):  # should be range(1, n+1)
+        total += i
+    return total",1,4,f,,off_by_one_range,"",easier,1.000,1.000,2,505,180,302687,,,,f,,2026-08-26 20:22:54.195622+00
+859,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,1,27,,,,,,,,,,,0,0,0,0,,,,t,Groq API i dalje vraća 429 nakon svih pokušaja.,2026-08-26 20:31:24.605102+00
+860,2c8239e7-467b-4bc9-8ac7-9647fdbe9ca1,langgraph,2,1,28,"def sequence_to_n(n):
+    # tvoj kod ovdje
+    return '\n'.join(str(i) for i in range(n))",0,3,f,,off_by_one_exclusive,"",easier,1.000,1.000,2,469,180,198890,,,,f,,2026-08-26 20:39:52.455242+00
+623,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,1,20,,,,,,,,,,,0,0,0,0,,,,t,"HTTPConnectionPool(host='localhost', port=8090): Read timed out. (read timeout=15)",2026-08-26 18:38:02.029069+00
+570,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,4,3,"def sign(n):
+    if n > 0:
+        return 'positive'
+    else:
+        if n < 0:
+            return 'negative'
+        else:
+            return 'positive'  # wrong for zero",2,3,f,,missing_zero_case,"",retry,0.000,0.000,2,445,180,16391,,,,f,,2026-08-26 18:30:04.64563+00
+572,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,5,5,"",0,7,f,,unordered_conditions,Pokušaj još jednom provjeriti uvjete za,retry,0.000,0.000,2,424,180,16265,,,,f,,2026-08-26 18:30:07.81197+00
+500,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-08-11 21:09:39.865584+00
+501,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,4,2,"def sign(n):
+    if n > 0:
+        return 'positive'
+    elif n < 0:
+        return 'negative'
+    else:
+        return 'zero'",3,3,t,,,"Bravo, uspješno si riješio zadatak! Očito si imao dovoljno znanja i iskustva za brzo i učinkovito rješenje.",advance,0.000,0.340,1,114,48,297,,,,f,,2026-08-11 21:09:40.919013+00
+502,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,5,3,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,Hvala ti što si uspješno riješio zadatak! Ocjena je 100% jer si uspio iz prvog pokušaja.,advance,0.340,0.680,1,118,38,297,,,,f,,2026-08-11 21:09:40.929972+00
+503,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,6,4,"def fizzbuzz_single(n):
+    if n % 3 == 0 and n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)",5,5,t,,,"Želimo vam srca! Brzo ste shvatio tajnu FizzBuzz-a, a to je velik uspjeh! Sve je u redu, nastavite tako!",advance,0.680,1.000,1,117,40,702,,,,f,,2026-08-11 21:09:42.200423+00
+504,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,1,5,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n+1))",3,3,t,,,Hvala ti na brzini i učinkovitosti! Učinkovito si riješio zadatak i pokazao da si spreman za daljnje izazove.,advance,0.000,0.340,1,119,43,327,,,,f,,2026-08-11 21:09:43.375249+00
+505,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,2,6,"def sum_of_range(n):
+    zbir = 0
+    for i in range(1, n + 1):
+        zbir += i
+    return zbir",4,4,t,,,"Ostvario si izvanredan uspjeh! Zadovoljavajuće je što si uspio riješiti zadatak na prvi pokušaj, što ukazuje na vašu sposobnost brzog i učinkovitog učenja.",advance,0.340,0.680,1,117,62,359,,,,f,,2026-08-11 21:09:44.288838+00
+506,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,3,7,"def reverse_string_forloop(s):
+    reversed_s = """"
+    for char in s:
+        reversed_s = char + reversed_s
+    return reversed_s",4,4,t,,,Želimo vam srce! Uspešno ste obrnuli string pomoću for petlje - to je solidan rezultat!,advance,0.680,1.000,1,120,35,281,,,,f,,2026-08-11 21:09:45.005866+00
+507,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,9,8,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,"Pokusaj ponovo razmišljati o uvjetima za odbrojavanje. Kada koristimo n >= 0, u stvarnosti smo uključili i slučaj kada je n jednak 0. To znači da će se i tada izvršiti ciklus odbrojanja, što nije željeno. Pokušaj promijeniti uvjet da bude n > 0.",retry,0.000,0.000,2,401,106,687,,,,f,,2026-08-11 21:09:45.710474+00
+508,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,9,9,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,"Pogledajte ponovo kôd i provjerite da li ste uključili ispravno uvjet za odbrojavanje. U slučaju n = 0, odbrojavanje ne bi trebalo nastaviti, pa se stoga treba dodati uvjet n > 0.",retry,0.000,0.000,2,401,77,578,,,,f,,2026-08-11 21:09:48.012678+00
+509,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,9,10,"def countdown(n):
+    while n > 0:
+        print(n)
+        n -= 1",0,3,f,off_by_one_condition,,"Nemoj se brinuti, svaki krug donosi novi pogodak! Pokušaj ponovno razmišljati o uvjetu n > 0, pa će ti lako izaći u svjetlo dana. Sjeti se, uvjet n > 0 znači da n mora biti veće od 0, što znači da će se odbrojavanje završiti kad n postane 0.",easier,0.000,0.000,2,401,111,734,,,,f,,2026-08-11 21:10:09.489417+00
+510,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,10,11,"def digit_sum(n):
+    zbir = 0
+    while n > 0:
+        zbir += n % 10
+        n //= 10
+    return zbir",4,4,t,,,"Ostvario si izvanredan rezultat! Uspešno si riješio zadatak za samo jedan pokušaj, što govori o vašoj brzini i preciznosti u razumijevanju problema.",advance,0.000,0.340,1,115,58,297,,,,f,,2026-08-11 21:10:09.497536+00
+511,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,11,12,"def collatz_steps(n):
+    koraci = 0
+    while n != 1:
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = 3 * n + 1
+        koraci += 1
+    return koraci",3,3,t,,,Hvala na uspješnom rješenju zadataka! Tvoj rad je izvrstan i pokazuje da si dobro razumio koncept Collatz niza i kako ga implementirati.,advance,0.340,0.680,1,118,48,311,,,,f,,2026-08-11 21:10:10.085851+00
+597,e3f6e677-3fdf-46b7-9625-b4e84c3faa23,llamaindex,1,3,7,"def reverse_string_forloop(s):
+    result = """"
+    for char in s:
+        result = char + result
+    return result",4,4,t,,,"",advance,0.680,1.000,1,147,150,546,,,,f,,2026-08-26 18:34:35.939054+00
+512,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,7,13,"def multiplication_table(n):
+    table = ''
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            table += str(i * j) + ' '
+        table = table.strip() + '\n'
+    return table.strip()",3,3,t,,,"Hvala što si uspio riješiti zadatak iz prvog pokušaja! To je odličan početak, i sigurno ćeš nastaviti da uspješno rješavaš sve buduće zadatake.",advance,0.000,0.340,1,115,57,297,,,,f,,2026-08-11 21:10:10.779841+00
+513,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,8,14,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    primes = [True] * (n + 1)
+    primes[0] = primes[1] = False
+    for i in range(2, int(n ** 0.5) + 1):
+        if primes[i]:
+            for j in range(i * i, n + 1, i):
+                primes[j] = False
+    return sum(primes)",4,4,t,,,Hvala ti za brzo i ispravno rješenje zadataka! Odlično si pokazao svoje znanje i spremanost za programiranje.,advance,0.340,0.680,1,119,40,344,,,,f,,2026-08-11 21:10:11.446661+00
+514,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,12,15,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,extra_space_added,,"Ne brini, sve će biti u redu! Preporučujem da se vratiš na zadatak i ispitaš što ste napravili. Pokušaj razumjeti što se od tebe traži i pokušaj ponovno napraviti trokut od zvjezdica bez razmaka između njih.",retry,0.680,0.680,2,453,84,514,,,,f,,2026-08-11 21:10:32.399295+00
+515,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,12,16,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,extra_space_added,,"Sjeti se, najvažnije je pravilno implementirati logiku koja će teći zvjezdice u jednom redu, bez razmaka između njih. Pokušaj ponovno razmišljati o tome kako bi mogao učiniti to da zvjezdice budu u jednom redu.",retry,0.680,0.680,2,453,80,608,,,,f,,2026-08-11 21:10:34.113746+00
+516,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,12,17,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,extra_space_added,,Pokusaj ponovo i sjeti se da se zvjezdice moraju porediti bez razmaka. Tako ćeš stvoriti pravi trokut od zvjezdica.,easier,0.680,0.680,2,453,47,781,,,,f,,2026-08-11 21:10:55.473157+00
+517,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,8,18,"def count_primes_upto(n):
+    brojac = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            brojac += 1
+    return brojac",4,4,t,,,"Hvala ti što si uspio riješiti zadatak! Tvoj trud i odgovor na 2. pokušaju su vama donijeli uspjeh, što je veliki korak naprijed u svom putu učenja.",advance,0.680,1.000,1,119,60,327,,,,f,,2026-08-11 21:10:55.484432+00
+518,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,12,19,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,extra_space_added,,"Pogledajte opet što ste napisali i pokušajte da pročistite kôd. Sjajno da ste pokrenuli projekt, sad samo malo ispravite detalje!",easier,1.000,1.000,2,453,52,561,,,,f,,2026-08-11 21:10:56.359061+00
+519,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,8,20,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    primes = 0
+    for candidate in range(2, n + 1):
+        is_prime = True
+        for divisor in range(2, int(candidate ** 0.5) + 1):
+            if candidate % divisor == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes += 1
+    return primes",4,4,t,,,"Željko, sve pohvale za točno rešen zadatak! Uspeh nije u broju pokušaja, već u vašoj vještini i znanju.",advance,1.000,1.000,1,119,46,15547,,,,f,,2026-08-11 21:10:57.317945+00
+520,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,12,21,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,extra_space_added,,"Pokusaj ponovo sa samopouzdanjem. Sjeti se da se zvjezdice moraju izlaziti jedne iznad druge, bez razmaka. To će ti donijeti ispravan trokut od zvjezdica.",easier,1.000,1.000,2,453,60,561,,,,f,,2026-08-11 21:11:13.243852+00
+521,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,8,22,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    prosti_brojevi = 0
+    kandidati = list(range(2, n + 1))
+    for i in range(len(kandidati)):
+        if kandidati[i] > 1:
+            prosti_brojevi += 1
+            for j in range(i + 1, len(kandidati)):
+                if kandidati[j] % kandidati[i] == 0:
+                    kandidati.pop(j)
+                    j -= 1
+    return prosti_brojevi",2,4,f,wrong_inner_range,,"""Probaj opet, ali ovaj put dobro razmišlaj o tome što zapravo traži zadatak. Pogledaj što se događa kad provjeravas djeljivost do num-1, a ne do num. To će ti pomoći da uhvatish pogrešku!""",easier,1.000,1.000,2,580,78,15827,,,,f,,2026-08-11 21:11:14.151493+00
+522,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,7,23,"def multiplication_table(n):
+    table = ''
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            table += str(i * j) + ' '
+        table = table.strip() + '\n'
+    return table.strip()",3,3,t,,,"Hvala na trudu i odvažnosti! Uspeh na drugom pokušaju je veliki korak naprijed, a ti si pokazao da si spreman za izazove koji te čekaju u svijetu programiranja!",advance,1.000,1.000,1,115,56,516,,,,f,,2026-08-11 21:11:30.461343+00
+523,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,8,24,"def count_primes_upto(n):
+    broj_prostih = 0
+    for i in range(2, n + 1):
+        prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                prost = False
+                break
+        if prost:
+            broj_prostih += 1
+    return broj_prostih",4,4,t,,,Hvala ti što si uspio riješiti zadatak! Tvoj uspjeh je rezultat tvrdnje i pouzdanja u vlastite sposobnosti.,advance,1.000,1.000,1,119,40,266,,,,f,,2026-08-11 21:11:31.329342+00
+524,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,12,25,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,extra_space_added,,Pogledajte ponovno na zadatak i pokušajte izbaciti sve razmake iz vaše rješenja. To će vam pomoći da dobijete ispravnu formu trokuta od zvjezdica.,easier,1.000,1.000,2,453,60,15905,,,,f,,2026-08-11 21:11:32.035691+00
+525,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,8,26,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    primes = [True] * (n + 1)
+    primes[0] = primes[1] = False
+    for i in range(2, int(n ** 0.5) + 1):
+        if primes[i]:
+            for j in range(i * i, n + 1, i):
+                primes[j] = False
+    return sum(primes)",4,4,t,,,"Hvala ti što si uspio riješiti zadatak! Odlično je što si uspio iz šeste pokušaja, to je veliki korak naprijed u programiranju!",advance,1.000,1.000,1,119,46,250,,,,f,,2026-08-11 21:11:48.266043+00
+526,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,12,27,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,extra_space_added,,"Pokusaj ponovo, ali ovaj put bez razmaka između zvjezdica. Trokut od zvjezdica će izgledati kao ovo: *** ili ***.",easier,1.000,1.000,2,453,47,467,,,,f,,2026-08-11 21:11:48.898401+00
+527,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,8,28,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    prosti_brojevi = 0
+    for i in range(2, n + 1):
+        je_prost = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                je_prost = False
+                break
+        if je_prost:
+            prosti_brojevi += 1
+    return prosti_brojevi",4,4,t,,,"Hvala ti na trudima i odgovornosti! Uspeo si da riješi zadatak nakon 7 pokušaja, što je veliki uspjeh!",advance,1.000,1.000,1,119,42,265,,,,f,,2026-08-11 21:11:49.690544+00
+528,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,12,29,"def star_triangle(n):
+    for i in range(1, n + 1):
+        print('* ' * i)",0,3,f,extra_space_added,,"Ne brini, sve će biti u redu! Preporučujem da ponovo pregleda zadatak i pokuša izraditi trokut od zvjezdica bez razmaka između zvjezdica. To će mu pomoći da bolje razumije zahtjeve zadataka.",easier,1.000,1.000,2,453,77,640,,,,f,,2026-08-11 21:12:10.649353+00
+529,d7a4b9c2-cb3f-46b7-b79c-362163ac0c98,langgraph,1,8,30,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    primes = 0
+    for candidate in range(2, n + 1):
+        is_prime = True
+        for divisor in range(2, int(candidate ** 0.5) + 1):
+            if candidate % divisor == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes += 1
+    return primes",4,4,t,,,"Super počastite! Uspešno ste prošli zadatak brojanja prostih brojeva do n, što je zaista zanimljiva matematička tema. Odmah nastavite sa daljnjim učenjem, imate talenta!",advance,1.000,1.000,1,119,60,375,,,,f,,2026-08-11 21:12:11.613163+00
+530,6c4172e1-0001-43d9-86a9-59c5f950a2a1,langgraph,1,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-08-26 18:26:12.600992+00
+531,6c4172e1-0001-43d9-86a9-59c5f950a2a1,langgraph,1,4,2,"def sign(n):
+    if n > 0:
+        return 'positive'
+    elif n < 0:
+        return 'negative'
+    else:
+        return 'zero'",3,3,t,,,"",advance,0.000,0.340,1,144,150,453,,,,f,,2026-08-26 18:26:14.638263+00
+532,6c4172e1-0001-43d9-86a9-59c5f950a2a1,langgraph,1,5,3,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,Sjajno! Čestitamo na brzom i točnom rješenju zadatka.,advance,0.340,0.680,1,146,123,422,,,,f,,2026-08-26 18:26:14.648492+00
+533,6c4172e1-0001-43d9-86a9-59c5f950a2a1,langgraph,1,6,4,"def fizzbuzz_single(n):
+    if n % 15 == 0:
+        return 'FizzBuzz'
+    if n % 3 == 0:
+        return 'Fizz'
+    if n % 5 == 0:
+        return 'Buzz'
+    return str(n)",5,5,t,,,Sjajno! Odli,advance,0.680,1.000,1,145,150,312,,,,f,,2026-08-26 18:26:15.772355+00
+534,6c4172e1-0001-43d9-86a9-59c5f950a2a1,langgraph,1,1,5,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,"",advance,0.000,0.340,1,148,150,703,,,,f,,2026-08-26 18:26:17.078612+00
+535,6c4172e1-0001-43d9-86a9-59c5f950a2a1,langgraph,1,2,6,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
+
+# Test cases
+if __name__ == ""__main__"":
+    print(sum_of_range(5))   # 15
+    print(sum_of_range(10))  # 55
+    print(sum_of_range(0))   # 0
+    print(sum_of_range(-3))  # 0",4,4,t,,,Sjajno! Uspješno ste riješili zadatak odmah na prvi pokušaj. Čestitamo!,advance,0.340,0.680,1,145,110,359,,,,f,,2026-08-26 18:26:18.352088+00
+536,6c4172e1-0001-43d9-86a9-59c5f950a2a1,langgraph,1,3,7,"def reverse_string_forloop(s):
+    result = """"
+    for char in s:
+        result = char + result
+    return result",4,4,t,,,Sjajno! Čestitamo na brzom rješavanju zadatka – obrnuli ste string odmah na prvi pokušaj. 🚀,advance,0.680,1.000,1,147,127,656,,,,f,,2026-08-26 18:26:19.416131+00
+537,6c4172e1-0001-43d9-86a9-59c5f950a2a1,langgraph,1,9,8,"def countdown(n):
+    result = []
+    while n > 0:
+        result.append(str(n))
+        n -= 1
+    return ""\n"".join(result)",3,3,t,,,"",advance,0.000,0.340,1,143,150,531,,,,f,,2026-08-26 18:26:20.781201+00
+538,6c4172e1-0001-43d9-86a9-59c5f950a2a1,langgraph,1,10,9,"def digit_sum(n):
+    total = 0
+    while n > 0:
+        total += n % 10
+        n //= 10
+    return total",4,4,t,,,Sjajno! Čestitamo na brzom i točnom rješenju zadatka na prvi pokušaj. Odlično ste pokazali svoje znanje i vještine!,advance,0.340,0.680,1,145,144,281,,,,f,,2026-08-26 18:26:21.898445+00
+539,6c4172e1-0001-43d9-86a9-59c5f950a2a1,langgraph,1,11,10,"def collatz_steps(n):
+    steps = 0
+    while n != 1:
+        if n % 2 == 0:
+            n //= 2
+        else:
+            n = 3 * n + 1
+        steps += 1
+    return steps",3,3,t,,,Sjajno! Čestitamo na brzom i točnom rješavanju zadatka od prvog pokušaja!,advance,0.680,1.000,1,146,124,360,,,,f,,2026-08-26 18:26:22.755551+00
+540,6c4172e1-0001-43d9-86a9-59c5f950a2a1,langgraph,1,7,11,"def multiplication_table(n):
+    rows = []
+    for i in range(1, n + 1):
+        row = ' '.join(str(i * j) for j in range(1, n + 1))
+        rows.append(row)
+    return '\n'.join(rows)",3,3,t,,,Sjajno! Čestitamo na brzom rješenju zadatka iz tablice množenja na prvom pokušaju! 🚀,advance,0.000,0.340,1,144,111,906,,,,f,,2026-08-26 18:26:23.59131+00
+541,6c4172e1-0001-43d9-86a9-59c5f950a2a1,langgraph,1,8,12,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    count = 0
+    for candidate in range(2, n + 1):
+        is_prime = True
+        for divisor in range(2, int(candidate ** 0.5) + 1):
+            if candidate % divisor == 0:
+                is_prime = False
+                break
+        if is_prime:
+            count += 1
+    return count",4,4,t,,,Sjajno! Uspješno ste riješili zadatak na prvi pokušaj – odlično!,advance,0.340,0.680,1,147,101,375,,,,f,,2026-08-26 18:26:25.313833+00
+542,6c4172e1-0001-43d9-86a9-59c5f950a2a1,langgraph,1,12,13,"def star_triangle(n):
+    result = """"
+    for i in range(1, n + 1):
+        line = """"
+        for j in range(i):
+            if j < i:
+                line += ""*""
+        result += line
+        if i != n:
+            result += ""\n""
+    return result",3,3,t,,,"",complete,0.680,1.000,1,147,150,531,,,,f,,2026-08-26 18:26:46.479101+00
+543,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-08-26 18:26:47.670319+00
+544,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,4,2,"def sign(n):
+    if n > 0:
+        return 'positive'
+    elif n < 0:
+        return 'negative'
+    else:
+        return 'zero'",3,3,t,,,"",advance,0.000,0.340,1,144,150,468,,,,f,,2026-08-26 18:26:48.625119+00
+545,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,5,3,"def grade(score):
+    if score > 90:
+        return 'A'
+    elif score > 80:
+        return 'B'
+    elif score > 70:
+        return 'C'
+    elif score > 60:
+        return 'D'
+    else:
+        return 'F'",5,7,f,,wrong_boundary_operator,Pokušaj još jednom provjeriti uvjete za određivanje ocjena – možda si propustio,retry,0.340,0.340,2,484,180,827,,,,f,,2026-08-26 18:26:48.636287+00
+546,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,5,4,"",0,7,f,,unordered_conditions,"",retry,0.340,0.340,2,424,180,859,,,,f,,2026-08-26 18:27:12.824598+00
+547,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,5,5,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,Sjajan posao! Odlično si uspio riješiti zadatak na treći pokušaj.,advance,0.340,0.680,1,146,114,265,,,,f,,2026-08-26 18:27:14.032047+00
+548,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,6,6,"def fizzbuzz_single(n):
+    if n % 3 == 0:
+        return 'Fizz'
+    if n % 5 == 0:
+        return 'Buzz'
+    return str(n)",3,5,f,,wrong_condition_order,"Pokušaj još jednom – provjeri uvjete za „Fizz” i „Buzz” i kako se oni kombiniraju, te osiguraj da koristiš ispravne operatora za djeljivost",retry,0.680,0.680,2,452,180,905,,,,f,,2026-08-26 18:27:14.042041+00
+571,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,4,4,"def sign(n):
+    # tvoj kod ovdje
+    if n >= 0:
+        return 'positive'
+    else:
+        return 'negative'",2,3,f,,wrong_comparison_operator,Pokušaj još jednom razmotriti kako se ponaša program za negativne,easier,0.000,0.000,2,432,180,1044,,,,f,,2026-08-26 18:30:07.801994+00
+549,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,6,7,"def fizzbuzz_single(n):
+    if n % 3 == 0 or n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)",3,5,f,,wrong_logical_operator,"Pokušaj ponovo – provjeri uvjete za djeljivost s 3 i 5 i osiguraj da se ispisuje “Fizz”, “Buzz” ili kombinacija prije broja. Drži se redoslijeda provjere i vidjet ćeš gdje je greška.",retry,0.680,0.680,2,479,176,874,,,,f,,2026-08-26 18:27:37.93046+00
+550,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,6,8,"def fizzbuzz_single(n):
+    if n % 15 == 0:
+        return 'FizzBuzz'
+    if n % 3 == 0:
+        return 'Fizz'
+    if n % 5 == 0:
+        return 'Buzz'
+    return str(n)",5,5,t,,,"Sjajno! Čestitamo na uspjehu s FizzBuzz zadatkom – iako je treći pokušaj, pokazao si izvanrednu upornost i razumijevanje!",advance,0.680,1.000,1,145,137,452,,,,f,,2026-08-26 18:27:39.115433+00
+551,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,1,9,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,Sjajno! Odlično ste riješili zadatak,advance,0.000,0.340,1,148,150,609,,,,f,,2026-08-26 18:27:39.151199+00
+552,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,2,10,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n):
+        total += i
+    return total",1,4,f,,off_by_one_range,"Nastavi raditi na zadatku – provjeri da li si pravilno definisao granice petlje i da li si sve varijable inicijalizovao. Možda si zaboravio dodati ili oduzeti neki indeks, pa pokušaj ponovno.",retry,0.340,0.340,2,493,169,16140,,,,f,,2026-08-26 18:27:40.558163+00
+553,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,2,11,"def sum_of_range(n):
+    for i in range(1, n + 1):
+        total = 0
+        total += i
+    return total",1,4,f,,accumulator_not_reset,"",retry,0.340,0.340,2,496,180,936,,,,f,,2026-08-26 18:27:59.276393+00
+554,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,2,12,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
+
+# Test
+print(sum_of_range(5))  # 15
+print(sum_of_range(10))  # 55
+print(sum_of_range(0))  # 0
+print(sum_of_range(1))  # 1",4,4,t,,,Sjajno! Čestitamo na uspjehu – dobro si se snašao/la u zadatku i pokazao/la izvanrednu upornost. Bravo!,advance,0.340,0.680,1,145,144,452,,,,f,,2026-08-26 18:28:00.3023+00
+555,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,3,13,"def reverse_string_forloop(s):
+    result = """"
+    for c in s:
+        result += c  # student mistakenly appends to the end instead of prepending
+    return result",2,4,f,,wrong_concatenation_order,"Pokušaj ponovno – obrni string koristeći `for`‑petlju, ali obrati pažnju na indeksiranje od kraja niza. Razmisli kako da privremeno pohraniš znakove dok ih pomičeš u obrnutom red",retry,0.680,0.680,2,450,180,15889,,,,f,,2026-08-26 18:28:00.308415+00
+556,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,3,14,"def reverse_string_forloop(s):
+    result = """"
+    for i in range(len(s) - 1, -1, -1):
+        result += s[i]
+    return result
+
+# Test
+print(reverse_string_forloop(""hello""))  # ""olleh""",4,4,t,,,Bravo! Odlično ste obrnuli string koristeći for petlju – sjajan rad i brz napredak!,advance,0.680,1.000,1,147,96,390,,,,f,,2026-08-26 18:28:17.726433+00
+557,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,9,15,,,,,,,,,,,0,0,0,0,,,,t,"HTTPConnectionPool(host='localhost', port=8090): Read timed out. (read timeout=15)",2026-08-26 18:28:17.732608+00
+558,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,9,16,"def countdown(n):
+    result = """"
+    while n >= 0:
+        result += str(n) + ""\n""
+        n -= 1
+    return result",0,3,f,,off_by_one_condition,"",retry,0.000,0.000,2,439,180,1327,,,,f,,2026-08-26 18:28:50.862987+00
+559,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,9,17,"def countdown(n):
+    result = """"
+    i = n
+    while i >= 1:
+        result += str(i)
+        if i > 1:
+            result += ""\n""
+        i -= 1
+    return result
+
+# Test
+print(countdown(5))",3,3,t,,,Odlično! Čestitamo na uspjehu – sjajan rad na zadatku „Odbrojavanje“!,advance,0.000,0.340,1,143,106,422,,,,f,,2026-08-26 18:28:52.38888+00
+560,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,10,18,"def digit_sum(n):
+    total = 0
+    while n > 0:
+        total += n % 10
+        n //= 10
+    return total
+
+# Example usage:
+# print(digit_sum(12345))  # Output: 15",4,4,t,,,Odlično! Uspješno ste riješili zadatak već na,advance,0.340,0.680,1,145,150,594,,,,f,,2026-08-26 18:28:52.398937+00
+561,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,11,19,"",0,3,f,,wrong_termination_condition,Pokušaj još jednom provjeriti,retry,0.680,0.680,2,441,180,797,,,,f,,2026-08-26 18:28:53.935073+00
+562,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,11,20,"def collatz_steps(n):
+    steps = 0
+    while n != 1:
+        if n % 2 == 0:
+            n //= 2
+        else:
+            n = 3 * n + 1
+        steps += 1
+    return steps",3,3,t,,,Sjajno! Uspio si riješiti zadatak Collatz niza u samo dva pokušaja – čestitamo na brzom i preciznom rješenju!,advance,0.680,1.000,1,146,139,593,,,,f,,2026-08-26 18:28:57.772424+00
+563,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,7,21,"def multiplication_table(n):
+    result = []
+    for i in range(1, n + 1):
+        row = []
+        for j in range(n):  # mistake: should be range(1, n + 1)
+            row.append(str(i * j))
+        result.append(' '.join(row))
+    return '\n'.join(result)",0,3,f,,off_by_one_inner_loop,"",retry,0.000,0.000,2,486,180,640,,,,f,,2026-08-26 18:28:57.783933+00
+564,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,7,22,"def multiplication_table(n):
+    rows = []
+    for i in range(1, n + 1):
+        row = ' '.join(str(i * j) for j in range(1, n + 1))
+        rows.append(row)
+    return '\n'.join(rows)",3,3,t,,,Sjajno! Čestitamo na uspjehu u tablici množenja – pokazao si izuzetnu upornost i brzo si savladao zadatak. Bravo!,advance,0.000,0.340,1,144,130,453,,,,f,,2026-08-26 18:29:21.615299+00
+565,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,8,23,"def count_primes_upto(n):
+    count = 0",0,4,f,,one_counted_as_prime,"",retry,0.340,0.340,2,466,180,1216,,,,f,,2026-08-26 18:29:21.623911+00
+566,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,8,24,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    prime_count = 0
+    for candidate in range(2, n + 1):
+        is_prime = True
+        for divisor in range(2, candidate):
+            if candidate % divisor == 0:
+                is_prime = False
+                break
+        if is_prime:
+            prime_count += 1
+    return prime_count",4,4,t,,,"Odlično ste riješili zadatak, čestitamo na uspjehu! Vaša upornost i preciznost su se pokazale kao ključni faktori.",advance,0.340,0.680,1,147,139,453,,,,f,,2026-08-26 18:29:26.126675+00
+567,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,12,25,"",0,3,f,,off_by_one_star_count,"Dobro, pokušaj još jednom razmotriti uvjete zadatka i provjeriti kako se petlja i uvjeti međusobno povezuju – možda postoji mali detalj koji si prop",retry,0.680,0.680,2,456,180,16125,,,,f,,2026-08-26 18:29:26.133986+00
+568,042586d5-84ac-4391-8d4e-f575a9d81048,langgraph,2,12,26,"def star_triangle(n):
+    result = """"
+    for i in range(1, n + 1):
+        line = """"
+        for j in range(i):
+            line += ""*""
+        result += line
+        if i != n:
+            result += ""\n""
+    return result
+
+# Test
+if __name__ == ""__main__"":
+    print(star_triangle(5))",3,3,t,,,Sjajno! Drago mi je da si uspio riješiti zadatak na drugi put. Bravo!,complete,0.680,1.000,1,147,115,530,,,,f,,2026-08-26 18:29:45.712509+00
+569,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-08-26 18:29:45.744508+00
+573,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,5,6,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,Čestitamo! Odlično ste riješili zadatak na drugom pokušaju.,advance,0.000,0.340,1,146,139,1030,,,,f,,2026-08-26 18:30:29.088459+00
+574,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,6,7,"def fizzbuzz_single(n):
+    if n % 3 == 0 or n % 5 == 0:
+        return ""FizzBuzz""
+    elif n % 3 == 0:
+        return ""Fizz""
+    elif n % 5 == 0:
+        return ""Buzz""
+    else:
+        return str(n)",3,5,f,,wrong_logical_operator,Pokušaj ponovo provjeriti redoslijed uvjeta –,retry,0.340,0.340,2,479,180,921,,,,f,,2026-08-26 18:30:29.100314+00
+575,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,6,8,"def fizzbuzz_single(n):
+    if n % 15 == 0:
+        return 'FizzBuzz'
+    if n % 3 == 0:
+        return 'Fizz'
+    if n % 5 == 0:
+        return 'Buzz'
+    return str(n)",5,5,t,,,Bravo! Čestitamo na uspjehu – dobro si se snašao/la i riješio/la zadatak na prvi pokušaj.,advance,0.340,0.680,1,145,92,780,,,,f,,2026-08-26 18:30:35.206901+00
+576,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,1,12,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,Sjajno! Čestitamo na uspjehu – odlično urađeno na četvrtom pokušaju!,advance,0.000,0.340,1,148,117,484,,,,f,,2026-08-26 18:30:35.214804+00
+577,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,2,13,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
+
+# Test cases
+print(sum_of_range(5))   # 15
+print(sum_of_range(10))  # 55
+print(sum_of_range(1))   # 1
+print(sum_of_range(0))   # 0
+print(sum_of_range(-3))  # 0",4,4,t,,,Čestitamo! Odlično si riješio zadatak već na prvom pokušaju!,advance,0.340,0.680,1,145,98,609,,,,f,,2026-08-26 18:30:59.619321+00
+578,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,3,14,"def reverse_string_forloop(s):
+    result = """"
+    for char in s:
+        result = char + result
+    return result",4,4,t,,,Sjajno! Čestitamo na brzom rješavanju zadatka – obrnuli ste string u prvom pokušaju. 🚀,advance,0.680,1.000,1,147,127,297,,,,f,,2026-08-26 18:31:01.496173+00
+579,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,9,15,"def countdown(n):
+    result = """"
+    while n >= 0:
+        result += str(n) + ""\n""
+        n -= 1
+    return result",0,3,f,,off_by_one_condition,"",retry,0.000,0.000,2,439,180,1234,,,,f,,2026-08-26 18:31:02.724127+00
+580,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,9,16,,,,,,,,,,,0,0,0,0,,,,t,"HTTPConnectionPool(host='localhost', port=8090): Read timed out. (read timeout=15)",2026-08-26 18:31:56.103795+00
+581,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,9,17,"def countdown(n):
+    result = """"
+    while n >= 0:
+        result += str(n) + ""\n""
+        n -= 1
+    return result",0,3,f,,off_by_one_condition,"Dobro je što si pokušao, ali provjeri kako si postavio uvjet za izlaz iz petlje –",easier,0.000,0.000,2,439,180,1185,,,,f,,2026-08-26 18:32:19.046056+00
+582,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,10,18,,,,,,,,,,,0,0,0,0,,,,t,"HTTPConnectionPool(host='localhost', port=8090): Read timed out. (read timeout=15)",2026-08-26 18:32:19.058053+00
+583,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,10,20,,,,,,,,,,,0,0,0,0,,,,t,"HTTPConnectionPool(host='localhost', port=8090): Read timed out. (read timeout=15)",2026-08-26 18:33:20.446399+00
+584,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,10,21,,,,,,,,,,,0,0,0,0,,,,t,"HTTPConnectionPool(host='localhost', port=8090): Read timed out. (read timeout=15)",2026-08-26 18:33:51.03311+00
+585,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,10,22,"def digit_sum(n):
+    total = 0
+    while n > 0:
+        total += n % 10
+        n //= 10
+    return total",4,4,t,,,"",advance,0.000,0.340,1,145,150,594,,,,f,,2026-08-26 18:33:55.447512+00
+586,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,11,23,"def collatz_steps(n):
+    steps = 0
+    while n != 1:
+        if n % 2 == 0:
+            n //= 2
+        else:
+            n = 3 * n + 1
+        steps += 1
+    return steps",3,3,t,,,Sjajno! Uspio si riješiti zadatak Collatz niza u prvom pokušaju. Odlično si pokazao/a razumijevanje koncepta i efikasnost koda.,advance,0.340,0.680,1,146,143,406,,,,f,,2026-08-26 18:33:55.460231+00
+587,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,7,24,"",0,3,f,,swapped_loop_variables,"",retry,0.000,0.000,2,414,180,718,,,,f,,2026-08-26 18:33:58.659612+00
+588,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,7,26,"def multiplication_table(n):
+    rows = []
+    for i in range(n):
+        row = []
+        for j in range(n):
+            row.append(str(i * j))
+        rows.append("" "".join(row))
+    return ""\n"".join(rows)",0,3,f,,off_by_one_inner_loop,Pokušaj još jednom provjeriti uvjete petlje i kako si inicijalizirao varijable – možda si zaboravio postaviti početnu vrijednost ili pog,easier,0.000,0.000,2,465,180,1062,,,,f,,2026-08-26 18:34:09.018292+00
+589,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,8,27,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    prime_count = 0
+    for candidate in range(2, n + 1):
+        is_prime = True
+        for divisor in range(2, int(candidate ** 0.5) + 1):
+            if candidate % divisor == 0:
+                is_prime = False
+                break
+        if is_prime:
+            prime_count += 1
+    return prime_count",4,4,t,,,"",advance,0.000,0.340,1,147,150,328,,,,f,,2026-08-26 18:34:09.029008+00
+590,ebf8b803-e764-4d60-a629-db9c9e45f34a,langgraph,3,12,28,"def star_triangle(n):
+    result = """"
+    for i in range(1, n + 1):
+        line = """"
+        for j in range(i):
+            if j < i:
+                line += ""*""
+        result += line
+        if i != n:
+            result += ""\n""
+    return result
+
+# Example usage:
+# print(star_triangle(5))
+# Output:
+# *
+# **
+# ***
+# ****
+# *****",3,3,t,,,Sjajno! Uspio si riješiti zadatak od prvog pokušaja – odličan rad!,complete,0.340,0.680,1,147,117,530,,,,f,,2026-08-26 18:34:14.083224+00
+591,e3f6e677-3fdf-46b7-9625-b4e84c3faa23,llamaindex,1,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-08-26 18:34:17.703321+00
+592,e3f6e677-3fdf-46b7-9625-b4e84c3faa23,llamaindex,1,4,2,"def sign(n):
+    if n > 0:
+        return 'positive'
+    elif n < 0:
+        return 'negative'
+    else:
+        return 'zero'",3,3,t,,,"",advance,0.000,0.340,1,144,150,532,,,,f,,2026-08-26 18:34:21.062961+00
+593,e3f6e677-3fdf-46b7-9625-b4e84c3faa23,llamaindex,1,5,3,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,Odlično! Uspješno ste završili zadatak već na prvom pokušaju. Bravo!,advance,0.340,0.680,1,146,79,484,,,,f,,2026-08-26 18:34:21.072722+00
+594,e3f6e677-3fdf-46b7-9625-b4e84c3faa23,llamaindex,1,6,4,"def fizzbuzz_single(n):
+    if n % 3 == 0 and n % 5 == 0:
+        return 'FizzBuzz'
+    if n % 3 == 0:
+        return 'Fizz'
+    if n % 5 == 0:
+        return 'Buzz'
+    return str(n)",5,5,t,,,Sjajno! Odlično si riješio FizzBuzz zadatak već iz prvog pokušaja. Bravo!,advance,0.680,1.000,1,145,125,750,,,,f,,2026-08-26 18:34:25.744486+00
+595,e3f6e677-3fdf-46b7-9625-b4e84c3faa23,llamaindex,1,1,5,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,"Bravo! Odlično ste riješili zadatak na prvi pokušaj. Svakako, nastavite u takvom duhu!",advance,0.000,0.340,1,148,97,422,,,,f,,2026-08-26 18:34:30.123019+00
+596,e3f6e677-3fdf-46b7-9625-b4e84c3faa23,llamaindex,1,2,6,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total",4,4,t,,,"",advance,0.340,0.680,1,145,150,782,,,,f,,2026-08-26 18:34:32.711849+00
+598,e3f6e677-3fdf-46b7-9625-b4e84c3faa23,llamaindex,1,9,8,"def countdown(n):
+    result = """"
+    while n > 0:
+        result += str(n)
+        if n > 1:
+            result += ""\n""
+        n -= 1
+    return result",3,3,t,,,Sjajno! Čestitamo na savršenom rješenju iz prvog pokušaja!,advance,0.000,0.340,1,143,145,375,,,,f,,2026-08-26 18:34:38.995134+00
+599,e3f6e677-3fdf-46b7-9625-b4e84c3faa23,llamaindex,1,10,9,"def digit_sum(n):
+    total = 0
+    while n > 0:
+        total += n % 10
+        n //= 10
+    return total
+
+# Example usage:
+# print(digit_sum(12345))  # Output: 15
+# print(digit_sum(0))      # Output: 0",4,4,t,,,Bravo! Sjajno si riješio zadatak u prvom pokušaju – to je odličan rezultat!,advance,0.340,0.680,1,145,79,531,,,,f,,2026-08-26 18:34:41.506597+00
+600,e3f6e677-3fdf-46b7-9625-b4e84c3faa23,llamaindex,1,11,10,"def collatz_steps(n):
+    steps = 0
+    while n != 1:
+        if n % 2 == 0:
+            n //= 2
+        else:
+            n = 3 * n + 1
+        steps += 1
+    return steps",3,3,t,,,"",advance,0.680,1.000,1,146,150,422,,,,f,,2026-08-26 18:34:44.43772+00
+601,e3f6e677-3fdf-46b7-9625-b4e84c3faa23,llamaindex,1,7,11,"def multiplication_table(n):
+    rows = []
+    for i in range(1, n + 1):
+        row = ' '.join(str(i * j) for j in range(1, n + 1))
+        rows.append(row)
+    return '\n'.join(rows)",3,3,t,,,Čestitamo na uspjehu! Sjajno ste riješili zadatak tablice množenja na prvi pokušaj.,advance,0.000,0.340,1,144,110,312,,,,f,,2026-08-26 18:34:46.451981+00
+602,e3f6e677-3fdf-46b7-9625-b4e84c3faa23,llamaindex,1,8,12,"def count_primes_upto(n):
+    if n < 2:
+        return 0
+    prime_count = 0
+    for candidate in range(2, n + 1):
+        is_prime = True
+        for divisor in range(2, candidate):
+            if candidate % divisor == 0:
+                is_prime = False
+                break
+        if is_prime:
+            prime_count += 1
+    return prime_count",4,4,t,,,Sjajno! Čestitamo na brzom rje,advance,0.340,0.680,1,147,150,359,,,,f,,2026-08-26 18:34:49.155211+00
+603,e3f6e677-3fdf-46b7-9625-b4e84c3faa23,llamaindex,1,12,13,"def star_triangle(n):
+    result = """"
+    for i in range(1, n + 1):
+        line = """"
+        for j in range(1, i + 1):
+            if j <= i:
+                line += ""*""
+        result += line
+        if i != n:
+            result += ""\n""
+    return result",3,3,t,,,Sjajno! Uspješno si riješio zadatak od prvog pokušaja. Čestitamo!,complete,0.680,1.000,1,147,114,484,,,,f,,2026-08-26 18:34:51.898882+00
+604,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-08-26 18:34:54.643188+00
+605,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,4,2,"def sign(n):
+    if n > 0:
+        return 'positive'
+    elif n < 0:
+        return 'negative'
+    else:
+        return 'zero'",3,3,t,,,Sjajno! Čestitamo na savršenom rješenju iz prvog pokušaja!,advance,0.000,0.340,1,144,136,562,,,,f,,2026-08-26 18:34:57.000722+00
+606,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,5,3,"",0,7,f,,wrong_boundary_operator,"Nema problema – samo još jednom provjeri kako se bodovi mapiraju na ocjene i pokušaj ponovo. Kad se fokusiraš na taj dio, rezultat će sigurno doći!",retry,0.340,0.340,2,424,165,1888,,,,f,,2026-08-26 18:34:57.006703+00
+607,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,5,4,"",0,7,f,,unordered_conditions,"",retry,0.340,0.340,2,424,180,906,,,,f,,2026-08-26 18:35:14.938155+00
+608,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,5,5,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,Čestitamo na uspjehu! Riješili ste zad,advance,0.340,0.680,1,146,150,593,,,,f,,2026-08-26 18:35:19.359271+00
+609,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,6,6,"def fizzbuzz_single(n):
+    if n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)",3,5,f,,wrong_condition_order,"",retry,0.680,0.680,2,455,180,952,,,,f,,2026-08-26 18:35:19.36496+00
+610,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,6,7,"def fizzbuzz_single(n):
+    if n % 3 == 0 or n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else",0,5,f,,wrong_logical_operator,"Dobro, samo još malo",retry,0.680,0.680,2,474,180,797,,,,f,,2026-08-26 18:35:42.917061+00
+611,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,6,8,"def fizzbuzz_single(n):
+    if n % 15 == 0:
+        return 'FizzBuzz'
+    if n % 3 == 0:
+        return 'Fizz'
+    if n % 5 == 0:
+        return 'Buzz'
+    return str(n)",5,5,t,,,Sjajno! Čestitamo na uspjehu s FizzBuzz zadatkom nakon tri pokušaja. 🚀,advance,0.680,1.000,1,145,128,437,,,,f,,2026-08-26 18:35:46.678945+00
+612,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,1,9,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,"Sjajno! Uspješno si riješio zadatak od prvog pokušaja, čestitamo!",advance,0.000,0.340,1,148,111,530,,,,f,,2026-08-26 18:35:46.68824+00
+613,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,2,10,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n):
+        total += i
+    return total",1,4,f,,off_by_one_range,"",retry,0.340,0.340,2,493,180,1781,,,,f,,2026-08-26 18:35:49.178476+00
+614,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,2,11,"def sum_of_range(n):
+    for i in range(1, n+1):
+        total = 0
+        total += i
+    return total",1,4,f,,accumulator_not_reset,Pokušaj još jednom razmotriti uvjete zadatka i prov,retry,0.340,0.340,2,495,180,702,,,,f,,2026-08-26 18:36:00.110588+00
+615,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,2,12,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
+
+# Test cases
+print(sum_of_range(5))   # 15
+print(sum_of_range(10))  # 55
+print(sum_of_range(0))   # 0
+print(sum_of_range(1))   # 1",2,4,f,,,Dobro je što si pokušao! Pogledaj još jednom uvjete zadatka,easier,0.340,0.340,2,548,180,905,,,,f,,2026-08-26 18:36:32.857927+00
+616,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,1,13,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,"",advance,0.340,0.680,1,148,150,531,,,,f,,2026-08-26 18:36:32.874499+00
+617,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,2,14,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n):
+        total += i
+    return total",1,4,f,,off_by_one_range,"",easier,0.680,0.680,2,493,180,1171,,,,f,,2026-08-26 18:36:35.156568+00
+618,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,1,15,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,Čestitamo! Sjajno ste riješili zadatak od 1 do n na treći pokušaj. 🚀,advance,0.680,1.000,1,148,106,469,,,,f,,2026-08-26 18:36:40.321784+00
+619,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,2,16,"def sum_of_range(n):
+    for i in range(1, n + 1):
+        total = 0
+        total += i
+    return total",1,4,f,,accumulator_not_reset,"",easier,1.000,1.000,2,496,180,717,,,,f,,2026-08-26 18:36:42.404266+00
+620,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,1,17,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,"",advance,1.000,1.000,1,148,150,594,,,,f,,2026-08-26 18:36:47.057423+00
+621,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,2,18,"",0,4,f,,zero_edge_case_error,Pažljivo provjeri uvjete u petlji i granice,easier,1.000,1.000,2,462,180,842,,,,f,,2026-08-26 18:36:49.107599+00
+622,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,1,19,,,,,,,,,,,0,0,0,0,,,,t,"HTTPConnectionPool(host='localhost', port=8090): Read timed out. (read timeout=15)",2026-08-26 18:36:55.289766+00
+624,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,1,21,"def sequence_to_n(n):
+    result = """"
+    for i in range(n):  # student mistakenly starts from 0
+        result += str(i) + ""\n""
+    return result
+
+# primjer upotrebe
+print(sequence_to_n(5))  # ispisat će 0,1,2,3,4 na zasebnim redovima, a ne 1-5",0,3,f,,off_by_one_exclusive,Dobro je što si pokuš,easier,1.000,1.000,2,523,180,859,,,,f,,2026-08-26 18:38:07.100853+00
+625,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,2,22,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n):
+        total += i
+    return total",1,4,f,,off_by_one_range,Pokušaj još jednom,easier,1.000,1.000,2,493,180,795,,,,f,,2026-08-26 18:38:07.108409+00
+626,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,1,23,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,Sjajno! Čestitamo na uspjehu – odlično si riješio zadatak nakon 8 pokušaja.,advance,1.000,1.000,1,148,118,531,,,,f,,2026-08-26 18:38:12.131678+00
+627,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,2,24,"def sum_of_range(n):
+    for i in range(1, n + 1):
+        total = 0
+        total += i
+    return total",1,4,f,,accumulator_not_reset,"Dobro je što si pokušao, ali izgleda da si propustio/la jedan ključni korak u izračunu raspona. Ponovo razmisli o tome kako definirati početak i kraj intervala i provjeri da li su svi brojevi pravilno uključeni.",easier,1.000,1.000,2,496,172,717,,,,f,,2026-08-26 18:38:14.587431+00
+628,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,1,25,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,Sjajno ste to uradili! Čestitamo na uspjehu – odlično ste riješili zadatak nakon,advance,1.000,1.000,1,148,150,327,,,,f,,2026-08-26 18:38:20.773026+00
+629,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,2,26,"",0,4,f,,zero_edge_case_error,Pokušaj još jednom provjeriti uvjete za sumu i kako se ona izračunava – možda si previdio neki korak. Sjeti se da je ponovni pregled koda često ključ za otkrivanje grešaka.,easier,1.000,1.000,2,462,163,874,,,,f,,2026-08-26 18:38:23.022199+00
+630,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,1,27,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,"Odlično! Uspeo si na 10. pokušaju, čestitamo!",advance,1.000,1.000,1,148,146,484,,,,f,,2026-08-26 18:38:29.192857+00
+631,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,2,28,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n):
+        total += i
+    return total",1,4,f,,off_by_one_range,Pokušaj još jednom provjeriti uvjete i varijable – možda je greška u uvjetu ili u petlji. Fokusiraj se na to gdje se brojanje zaista događa i uporedi s očekivanim rasponom.,easier,1.000,1.000,2,493,169,953,,,,f,,2026-08-26 18:38:32.09762+00
+632,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,1,29,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,"",advance,1.000,1.000,1,148,150,594,,,,f,,2026-08-26 18:38:37.793624+00
+633,dffb930f-742d-450c-a1c9-a453f0382ef7,llamaindex,2,2,30,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
+
+# Test cases
+print(sum_of_range(5))   # 15
+print(sum_of_range(10))  # 55
+print(sum_of_range(0))   # 0
+print(sum_of_range(1))   # 1",4,4,t,,,Sjajno! Čest,advance,1.000,1.000,1,145,150,593,,,,f,,2026-08-26 18:38:40.936716+00
+634,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-08-26 18:38:44.339652+00
+635,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,4,3,"def sign(n):
+    if n > 0:
+        return 'positive'
+    else:
+        if n < 0:
+            return 'negative'
+        else:
+            return 'positive'  # incorrect for zero",2,3,f,,missing_zero_case,"",retry,0.000,0.000,2,445,180,937,,,,f,,2026-08-26 18:38:50.748687+00
+636,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,4,4,"def sign(n):
+    # tvoj kod ovdje
+    if n >= 0:
+        return 'positive'
+    elif n < 0:
+        return 'negative'",2,3,f,,wrong_comparison_operator,"",easier,0.000,0.000,2,436,180,984,,,,f,,2026-08-26 18:38:56.224509+00
+637,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,5,5,"",0,7,f,,unordered_conditions,"Dobro, samo još malo prov",retry,0.000,0.000,2,424,180,1562,,,,f,,2026-08-26 18:38:56.235402+00
+638,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,5,6,"def grade(score):
+    if score >= 90:
+        return 'A'
+    elif score >= 80:
+        return 'B'
+    elif score >= 70:
+        return 'C'
+    elif score >= 60:
+        return 'D'
+    else:
+        return 'F'",7,7,t,,,Odlično! Čestitamo na uspjehu – savršeno si riješio zadatak na drugom pokušaju.,advance,0.000,0.340,1,146,106,405,,,,f,,2026-08-26 18:39:10.520474+00
+639,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,6,7,"def fizzbuzz_single(n):
+    if n % 3 == 0 or n % 5 == 0:
+        return 'FizzBuzz'
+    elif n % 3 == 0:
+        return 'Fizz'
+    elif n % 5 == 0:
+        return 'Buzz'
+    else:
+        return str(n)",3,5,f,,wrong_logical_operator,Ne odustaj! Prouči kako se uvjeti za `Fizz`,retry,0.340,0.340,2,479,180,1031,,,,f,,2026-08-26 18:39:10.528494+00
+640,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,6,8,"def fizzbuzz_single(n):
+    if n % 15 == 0:
+        return 'FizzBuzz'
+    if n % 3 == 0:
+        return 'Fizz'
+    if n % 5 == 0:
+        return 'Buzz'
+    return str(n)",5,5,t,,,Odlično! Čestitamo na rješavanju FizzBuzz zadatka u samo dva pokušaja! 🎉,advance,0.340,0.680,1,145,107,562,,,,f,,2026-08-26 18:39:24.172599+00
+641,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,1,12,"def sequence_to_n(n):
+    return '\n'.join(str(i) for i in range(1, n + 1))",3,3,t,,,"",advance,0.000,0.340,1,148,150,515,,,,f,,2026-08-26 18:39:24.177426+00
+642,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,2,13,"def sum_of_range(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
+
+# Test cases
+print(sum_of_range(5))   # 15
+print(sum_of_range(10))  # 55
+print(sum_of_range(1))   # 1
+print(sum_of_range(0))   # 0
+print(sum_of_range(-3))  # 0",4,4,t,,,Sjajno! Uspeo si iz prvog pokušaja – odlična izvedba!,advance,0.340,0.680,1,145,116,578,,,,f,,2026-08-26 18:39:28.049041+00
+643,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,3,14,"def reverse_string_forloop(s):
+    result = """"
+    for char in s:
+        result = char + result
+    return result",4,4,t,,,Sjajno! Upravo si obrnuli string u prvom pokušaju – to je odličan rezultat! 🚀,advance,0.680,1.000,1,147,147,359,,,,f,,2026-08-26 18:39:31.092329+00
+644,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,9,15,"def countdown(n):
+    result = """"
+    while n >= 0:
+        result += str(n) + ""\n""
+        n -= 1
+    return result",0,3,f,,off_by_one_condition,"",retry,0.000,0.000,2,439,180,843,,,,f,,2026-08-26 18:39:34.084304+00
+645,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,9,16,,,,,,,,,,,0,0,0,0,,,,t,"HTTPConnectionPool(host='localhost', port=8090): Read timed out. (read timeout=15)",2026-08-26 18:40:30.767887+00
+646,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,9,17,"def countdown(n):
+    result = """"
+    while n >= 0:  # should be n > 0
+        result += str(n) + ""\n""
+        n -= 1
+    return result
+
+# Test
+print(countdown(3))  # Expected: ""3\n2\n1\n"" but will print ""3\n2\n1\n0\n""",0,3,f,,off_by_one_condition,"",easier,0.000,0.000,2,482,180,1421,,,,f,,2026-08-26 18:40:41.873212+00
+647,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,10,18,,,,,,,,,,,0,0,0,0,,,,t,"HTTPConnectionPool(host='localhost', port=8090): Read timed out. (read timeout=15)",2026-08-26 18:40:41.880653+00
+648,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,10,20,,,,,,,,,,,0,0,0,0,,,,t,"HTTPConnectionPool(host='localhost', port=8090): Read timed out. (read timeout=15)",2026-08-26 18:41:44.03195+00
+649,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,10,21,,,,,,,,,,,0,0,0,0,,,,t,"HTTPConnectionPool(host='localhost', port=8090): Read timed out. (read timeout=15)",2026-08-26 18:42:14.854426+00
+650,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,10,22,"def digit_sum(n):
+    total = 0
+    while n > 0:
+        total += n % 10
+        n //= 10
+    return total",4,4,t,,,Sjajan rad! Čestitamo na uspjehu – odlično ste savladali zadatak sumiranja cifara.,advance,0.000,0.340,1,145,110,515,,,,f,,2026-08-26 18:42:19.856036+00
+651,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,11,23,"def collatz_steps(n):
+    steps = 0
+    while n != 1:
+        if n % 2 == 0:
+            n //= 2
+        else:
+            n = 3 * n + 1
+        steps += 1
+    return steps",3,3,t,,,Sjajno! Čestitamo na brzom rješenju zadatka iz prvog pokušaja!,advance,0.340,0.680,1,146,134,343,,,,f,,2026-08-26 18:42:19.86572+00
+652,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,7,24,"",0,3,f,,swapped_loop_variables,"",retry,0.000,0.000,2,414,180,984,,,,f,,2026-08-26 18:42:24.681478+00
+653,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,7,26,"def multiplication_table(n):
+    rows = []
+    for i in range(1, n+1):
+        row = []
+        for j in range(n):  # should be range(1, n+1)
+            row.append(str(i * j))
+        rows.append(' '.join(row))
+    return '\n'.join(rows)",0,3,f,,off_by_one_inner_loop,"",easier,0.000,0.000,2,482,180,874,,,,f,,2026-08-26 18:42:37.568513+00
+654,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,8,27,"def count_primes_upto(n):
+    count = 0
+    for num in range(2, n + 1):
+        is_prime = True
+        for divisor in range(2, int(num ** 0.5) + 1):
+            if num % divisor == 0:
+                is_prime = False
+                break
+        if is_prime:
+            count += 1
+    return count",4,4,t,,,"",advance,0.000,0.340,1,147,150,452,,,,f,,2026-08-26 18:42:37.575625+00
+655,4f51b5bc-a7bf-41d7-9659-d374ddc3d672,llamaindex,3,12,28,"def star_triangle(n):
+    result = """"
+    for i in range(1, n + 1):
+        line = """"
+        for j in range(i):
+            if j < i:
+                line += ""*""
+        result += line
+        if i != n:
+            result += ""\n""
+    return result",3,3,t,,,Sjajno! Uspio si riješiti zadatak već na prvoj prilici – čestitamo!,complete,0.340,0.680,1,147,125,468,,,,f,,2026-08-26 18:42:43.155603+00
+818,0af26db2-1f9a-4ebb-adb1-29f40ce4ffae,langgraph,1,4,1,,,,,,,Evo tvog prvog zadatka: Predznak broja. Sretno!,retry,0.000,0.000,0,0,0,0,,,,f,,2026-08-26 19:19:12.200948+00
+819,0af26db2-1f9a-4ebb-adb1-29f40ce4ffae,langgraph,1,4,2,,,,,,,,,,,0,0,0,0,,,,t,"HTTPConnectionPool(host='localhost', port=8090): Read timed out. (read timeout=15)",2026-08-26 19:19:27.676473+00

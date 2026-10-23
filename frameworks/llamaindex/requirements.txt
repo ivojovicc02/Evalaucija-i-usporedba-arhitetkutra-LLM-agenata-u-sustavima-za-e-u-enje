@@ -1,0 +1,3 @@
+crewai
+requests
+psycopg2-binary

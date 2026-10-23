@@ -1,0 +1,39 @@
+{
+  "concept_code": "for_loop",
+  "difficulty": 1,
+  "title": "Niz brojeva od 1 do n",
+  "prompt": "Napiši funkciju `sequence_to_n(n)` koja vraća string s brojevima od 1 do n (uključivo), svaki u novom redu (razdvojeno s '\\n').",
+  "entry_point": "sequence_to_n",
+  "starter_code": "def sequence_to_n(n):\n    # tvoj kod ovdje\n    pass\n",
+  "test_cases": [
+    {
+      "input": 3,
+      "expected_output": "1\n2\n3"
+    },
+    {
+      "input": 1,
+      "expected_output": "1"
+    },
+    {
+      "input": 5,
+      "expected_output": "1\n2\n3\n4\n5"
+    }
+  ],
+  "common_errors": [
+    {
+      "error_code": "off_by_one_exclusive",
+      "description": "Student koristi range(n) umjesto range(1, n+1) -> ispiše 0 do n-1",
+      "example_wrong_code": "def sequence_to_n(n):\n    return '\\n'.join(str(i) for i in range(n))\n"
+    },
+    {
+      "error_code": "off_by_one_upper_bound",
+      "description": "Student koristi range(1, n) -> nedostaje posljednji broj",
+      "example_wrong_code": "def sequence_to_n(n):\n    return '\\n'.join(str(i) for i in range(1, n))\n"
+    },
+    {
+      "error_code": "infinite_loop_while_confusion",
+      "description": "Student pokuša while umjesto for i zaboravi inkrement -> beskonačna petlja (testira sandbox timeout)",
+      "example_wrong_code": "def sequence_to_n(n):\n    i = 1\n    result = []\n    while i <= n:\n        result.append(str(i))\n    return '\\n'.join(result)\n"
+    }
+  ]
+}
